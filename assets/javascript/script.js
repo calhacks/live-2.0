@@ -2,7 +2,6 @@ $(document).ready(function() {
 
   var window_height = $(window).height();
   //adjust section height
-  $(".section.full").css({"height": window_height});
 
   $(".nav-menu").click(function() {
     $("#nav-sections").show()
@@ -16,6 +15,7 @@ $(document).ready(function() {
     $(window).scroll(switchNav);
     $("body").backstretch("assets/img/crowd.jpg");
     $("#apply").backstretch("assets/img/stars.jpeg");
+    $(".section.full").css({"height": window_height});
   } else {
     $(window).scroll(switchNavMobile);
      $("#nav-close, .nav-section").click(function() {

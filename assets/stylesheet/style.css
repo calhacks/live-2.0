@@ -99,7 +99,7 @@ a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.72) )
+  background-color: rgba(0,0,0,0.6)
 }
 
 /* sections */
@@ -258,7 +258,7 @@ a:hover {
   width: 100%;
   height: 100%;
   position: relative;
-  background-color: #428BE5;
+  background-color: #001C2A;
   padding: 0px 60px
 }
 
@@ -296,15 +296,16 @@ a:hover {
   text-align: center;
   line-height: 1.52;
   text-transform: uppercase;
+  color: rgb(216, 152, 37);
 }
 
 
 #hackathon-laptop {
   position: absolute;
   width: 100%;
-  max-width: 850px;
+  max-width: 550px;
   display: block;
-  bottom: 0
+  bottom: 15%;
 }
 
 /* about */
@@ -539,6 +540,10 @@ a:hover {
     color: inherit;
   }
 
+  #hackathon-laptop {
+    position: relative;
+  }
+
   #menu_white {
     display: block;
   }
@@ -641,8 +646,7 @@ a:hover {
 
   /* apply */
   #apply {
-    /* Blaze it */
-    height: 420px;
+    height: auto;
     background-image: url("../img/stars.jpeg");
   }
 
