@@ -105,10 +105,11 @@ a:hover {
 /* sections */
 
 .section-header {
-  font-size: 28px;
+  font-size: 36px;
   margin-bottom: 80px;
   z-index: 1;
   position: relative;
+  text-align: center;
 }
 
 .section-header span {
@@ -257,7 +258,7 @@ a:hover {
   width: 100%;
   height: 100%;
   position: relative;
-  background-color: #ED5F5F;
+  background-color: #428BE5;
   padding: 0px 60px
 }
 
@@ -376,18 +377,13 @@ a:hover {
   height: 600px
 }
 
-#apply .section-header {
-  color: white;
-  margin-top: 60px;
-  margin-bottom: 60px
-}
 
 .apply-container {
   width: 100%;
   max-width: 400px;
-  float: right;
   text-align: center;
-  margin: 0px 150px 0px 0px;
+  margin: 0 auto;
+  margin-top: 150px;
   position: relative;
 }
 
