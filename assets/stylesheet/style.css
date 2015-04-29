@@ -88,9 +88,6 @@ a:hover {
   border-radius: 2px;
 }
 
-
-
-
 #typed-cursor.blinking {
   -webkit-animation: 1s blink step-end infinite;
   -moz-animation: 1s blink step-end infinite;
@@ -279,6 +276,7 @@ a:hover {
   width: 20px;
   margin-top: 5px;
   display: none;
+  cursor: pointer;
 }
 
 #nav-sections {
@@ -602,6 +600,7 @@ a:hover {
 
   #hackathon-laptop {
     position: relative;
+    bottom: 0;
   }
 
   #menu_white {
@@ -625,7 +624,7 @@ a:hover {
   }
 
   .nav-section:hover:not(#nav-close), .nav-section.active {
-    background-color: #ED5F5F;
+    background-color: #F5A623;
     padding: 20px;
     border: none;
     color: white
@@ -656,6 +655,10 @@ a:hover {
     width: 100%;
     margin: 8px 0px;
     text-align: center;
+  }
+
+  .button.apply {
+    width: initial
   }
 
   .faq-row {
@@ -715,16 +718,11 @@ a:hover {
   }
 
   #apply .apply-container {
-    width: 100%;
     margin: 0;
   }
 
   #apply .apply-header {
     font-size: 22px
-  }
-
-  #apply .button {
-    padding:
   }
 
   /*sponsors */
