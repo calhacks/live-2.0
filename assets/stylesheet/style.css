@@ -88,6 +88,66 @@ a:hover {
   border-radius: 2px;
 }
 
+
+
+
+#typed-cursor.blinking {
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from,to {
+  color: transparent;
+}
+ 50% {
+    color: inherit;
+ }
+
+}
+
+@-moz-keyframes blink {
+  from,to {
+  color: transparent;
+}
+ 50% {
+   color: inherit;
+ }
+
+}
+
+@-webkit-keyframes "blink" {
+  from,to {
+  color: transparent;
+}
+ 50% {
+   color: inherit;
+ }
+
+}
+
+@-ms-keyframes "blink" {
+  from,to {
+  color: transparent;
+}
+ 50% {
+   color: inherit;
+ }
+
+}
+
+@-o-keyframes "blink" {
+  from,to {
+  color: transparent;
+}
+ 50% {
+   color: inherit;
+ }
+}
+
 /* utilities */
 .clear {
   clear: both;
