@@ -461,6 +461,10 @@ a:hover {
   font-family: "Open Sans",sans-serif;
 }
 
+#footer p {
+  font-weight: 100
+}
+
 /* responsive */
 
 
@@ -469,11 +473,6 @@ a:hover {
   h1 {
     font-size: 20px;
     line-height: 1.6
-  }
-
-  p {
-    font-size: 14px;
-    line-height: 1.8;
   }
 
   .overlay {
@@ -687,6 +686,11 @@ a:hover {
 
   #social.section {
     padding: 25px 20px
+  }
+
+  #footer p {
+    font-size: 14px;
+    line-height: 1.8;
   }
 
 
