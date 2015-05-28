@@ -101,7 +101,7 @@ a:hover {
   color: transparent;
 }
  50% {
-    color: inherit;
+    color: white;
  }
 
 }
@@ -111,7 +111,7 @@ a:hover {
   color: transparent;
 }
  50% {
-   color: inherit;
+   color: white;
  }
 
 }
@@ -121,7 +121,7 @@ a:hover {
   color: transparent;
 }
  50% {
-   color: inherit;
+   color: white;
  }
 
 }
@@ -131,7 +131,7 @@ a:hover {
   color: transparent;
 }
  50% {
-   color: inherit;
+   color: white;
  }
 
 }
@@ -141,7 +141,7 @@ a:hover {
   color: transparent;
 }
  50% {
-   color: inherit;
+   color: white;
  }
 }
 
@@ -160,6 +160,14 @@ a:hover {
 }
 
 /* sections */
+
+.section-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+  max-height: 900px;
+}
 
 .section-header {
   font-size: 36px;
@@ -334,6 +342,7 @@ a:hover {
   position: relative;
   text-align: center;
   padding: 20px 10px;
+  z-index: 1;
 }
 
 
@@ -360,10 +369,11 @@ a:hover {
 
 #hackathon-laptop {
   position: absolute;
-  width: 100%;
-  max-width: 550px;
+  width: calc(120px + 35%);
   display: block;
-  bottom: 15%;
+  min-width: 400px;
+  bottom: 10%;
+  left: 10%;
 }
 
 /* about */
@@ -376,7 +386,6 @@ a:hover {
 #hackathon_tablet {
   position: absolute;
   right: 30px;
-  bottom: 120px
 }
 
 /* hackathon photo */
@@ -601,6 +610,8 @@ a:hover {
   #hackathon-laptop {
     position: relative;
     bottom: 0;
+    left: initial;
+    width: 100%;
   }
 
   #menu_white {
