@@ -7,3 +7,4 @@ Cal Hacks 2 website. Written in vanilla HTML, CSS, Javascript
 
 **Designers:**
 * Zhi Pan
+* Alex Kern
