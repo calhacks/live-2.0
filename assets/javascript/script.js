@@ -16,8 +16,11 @@ $(document).ready(function() {
     //$("body").backstretch("assets/img/crowd.jpg");
     //$("#apply").backstretch("assets/img/stars.jpeg");
     $(".section.full").css({"height": window_height});
+    $(document).on("scroll", onScroll);
   } else {
-    $(window).scroll(switchNavMobile);
+    $("#nav").addClass("active-mobile");
+    $("#logo_white").hide();
+    $("#logo_orange").show();
      $("#nav-close, .nav-section").click(function() {
       $("#nav-sections").removeClass("active")
       setTimeout(function() {
@@ -26,7 +29,6 @@ $(document).ready(function() {
     });
   }
 
-  $(document).on("scroll", onScroll);
 
   //smoothscroll
   $('a[href^="#"]').on('click', function (e) {
