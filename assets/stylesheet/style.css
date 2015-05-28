@@ -156,7 +156,7 @@ a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0,0,0,0.6)
+  background-color: rgba(0,0,0,0.36)
 }
 
 /* sections */
@@ -531,7 +531,25 @@ a:hover {
 
 /* responsive */
 
+/* ipad */
+@media (max-width: 900px) {
+  #hackathon_tablet {
+    position: relative;
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+    right: initial;
+    bottom: initial;
+    margin-top: -30px;
+    margin-bottom: 35px;
+  }
 
+  #nav {
+    padding: 40px 40px 0px 40px
+  }
+}
+
+/* phone */
 @media (max-width: 700px) {
 
   h1 {
@@ -703,7 +721,6 @@ a:hover {
     margin-left: 12.5%;
     right: initial;
     bottom: initial;
-    opacity: 0.6;
     margin-top: -30px;
     margin-bottom: 35px;
   }
