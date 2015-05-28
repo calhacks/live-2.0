@@ -366,6 +366,14 @@ a:hover {
   color: rgb(216, 152, 37);
 }
 
+.sub-headline.mini {
+  font-size: 16px;
+  text-transform: none;
+  opacity: 0.72;
+  color: white;
+  margin-top: 15px
+}
+
 
 #hackathon-laptop {
   position: absolute;
@@ -441,10 +449,19 @@ a:hover {
 /* apply */
 
 #apply {
-  background-size: cover;
-  height: 600px
+  height: 600px;
+  background-color: #6FCBDC;
 }
 
+.desktop-img {
+  background-image: url("../img/messy_desk.svg");
+  position: absolute;
+  top: 0;
+  width: 25%;
+  height: 100%;
+  background-repeat: repeat-y;
+  right: 0
+}
 
 .apply-container {
   width: 100%;
@@ -468,6 +485,13 @@ a:hover {
 
 /* sponsor */
 
+#rocket {
+  width: 150px;
+  position: relative;
+  margin: 25px 0px;
+  margin-left: calc(50% - 75px);
+}
+
 #sponsor {
   background-color: #F0F0F0;
   color: #8F9CB3;
@@ -484,7 +508,6 @@ a:hover {
   text-align: center;
   width: 80%;
   margin: 0 auto;
-  margin-top: 120px
 }
 .sponsor {
   height: 30px;
@@ -526,7 +549,8 @@ a:hover {
 }
 
 #footer p {
-  font-weight: 100
+  font-weight: 100;
+  line-height: 1.7
 }
 
 /* responsive */
@@ -738,7 +762,7 @@ a:hover {
   /* apply */
   #apply {
     height: auto;
-    background-image: url("../img/stars.jpeg");
+    /* background-image: url("../img/stars.jpeg"); */
   }
 
   #apply .section-header {
@@ -757,7 +781,6 @@ a:hover {
   #sponsors-container {
     width: 100%;
     padding: 0px 15px;
-    margin-top: 60px
   }
   .sponsor {
     height: 15px;
@@ -766,6 +789,12 @@ a:hover {
 
   #sponsor .section-body p {
     font-size: 16px;
+  }
+
+  #rocket {
+    width: 100px;
+    margin: 20px 0px;
+    margin-left: calc(50% - 50px);
   }
 
   /* footer */
@@ -777,6 +806,10 @@ a:hover {
   #footer p {
     font-size: 14px;
     line-height: 1.8;
+  }
+
+  .desktop-img {
+    display: none
   }
 
 

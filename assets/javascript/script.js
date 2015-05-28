@@ -13,8 +13,8 @@ $(document).ready(function() {
 
   if ($(window).width() > 480) {
     $(window).scroll(switchNav);
-    $("body").backstretch("assets/img/crowd.jpg");
-    $("#apply").backstretch("assets/img/stars.jpeg");
+    //$("body").backstretch("assets/img/crowd.jpg");
+    //$("#apply").backstretch("assets/img/stars.jpeg");
     $(".section.full").css({"height": window_height});
   } else {
     $(window).scroll(switchNavMobile);
