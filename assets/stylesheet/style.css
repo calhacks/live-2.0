@@ -653,7 +653,10 @@ a:hover {
     position: relative;
     bottom: 0;
     left: initial;
-    width: 100%;
+    width: 1px;
+    min-width: 0;
+    opacity: 0;
+    /* hiding thie in mobile for now. Display none glitches for some reason 8 */
   }
 
   #menu_white {
