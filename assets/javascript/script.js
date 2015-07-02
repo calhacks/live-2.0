@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  logEmoji();
+
   var window_height = $(window).height();
   //adjust section height
 
@@ -96,4 +98,17 @@ var activateSection = function(section) {
   current = $(".nav-section.active");
   current.removeClass("active");
   $(section).addClass("active")
+}
+
+var logEmoji = function() {
+  var styles = {
+    please: "color: #336699; font-weight: bold",
+    emoji: function() {
+      return "background-image: url('http://emojipedia.org/wp-content/uploads/2013/07/6-winking-face.png'); background-size: cover";
+    }
+  };
+  console.log(
+    "%cWelcome to Cal Hacks! %c  ",
+    styles.please, styles.emoji()
+  );
 }
