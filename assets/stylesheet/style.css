@@ -777,6 +777,11 @@ a:hover:not(.social) {
     background-size: cover;
   }
 
+  /*landing*/
+  #landing {
+    background-image: url("../img/hackathon_background.jpg");
+  }
+
   /* apply */
   #apply {
     height: auto;
