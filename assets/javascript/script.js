@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   logEmoji();
 
-  var window_height = $(window).height();
+  //var window_height = $(window).height();
   //adjust section height
 
   $(".nav-menu").click(function() {
@@ -16,9 +16,10 @@ $(document).ready(function() {
   if ($(window).width() > 480) {
     $(window).scroll(switchNav);
     //$("body").backstretch("assets/img/crowd.jpg");
-    //$("#apply").backstretch("assets/img/stars.jpeg");
-    $(".section.full").css({"height": window_height});
+    $("body").backstretch("assets/img/hackathon_background.jpg");
+    //$(".section.full").css({"height": window_height});
     $(document).on("scroll", onScroll);
+    $(".section").click(loadPixelOnMouse)
   } else {
     $("#nav").addClass("active-mobile");
     $("#logo_white").hide();
@@ -54,6 +55,44 @@ $(document).ready(function() {
   });
 });
 
+loadSponsors()
+
+var pixels = ["ambulance.svg", "battery-half.svg", "chevron-left.svg", "chevron-right.svg", "diamond.svg", "emoticon-confused.svg", "file-text.svg", "food.svg", "hand.svg", "location.svg", "palette.svg", "question.svg", "ruler-triangle.svg", "stats-down.svg", "tshirt.svg"];
+
+function randomPixel() {
+  var rand = Math.floor(Math.random() * pixels.length);
+  var path = "assets/img/pixel/" + pixels[rand];
+  // var html = '<svg viewBox="0 0 32 32"> <use xlink:href="' + path + '"></use></svg>'
+  var html = '<img class="pixel" src="' + path + '" />'
+  return $(html)
+}
+
+function loadPixels(num, container) {
+  var $container = $(container)
+  for (var i = 0; i < num; i++) {
+    var pixel = randomPixel()
+    $container.append(pixel);
+    return pixel
+  }
+}
+
+
+function loadPixelOnMouse(e) {
+  waitBeforeLoad = true
+  var $container = $(this);
+  var offset = $container.offset()
+  var pixel = loadPixels(1, $container)
+  pixel.css({
+    left: e.pageX - offset.left,
+    top: e.pageY - offset.top
+  })
+  // setTimeout(function() {
+  //   pixel.remove()
+  // }, 1000)
+}
+
+window.loadPixels = loadPixels
+
 function onScroll(event){
   var scrollPos = $(document).scrollTop();
   $('#nav-sections a').each(function () {
@@ -67,6 +106,14 @@ function onScroll(event){
           currLink.parent().removeClass("active");
       }
   });
+}
+
+function loadSponsors() {
+  $('.sponsor').each(function(index, sponsor) {
+    var $sponsor = $(sponsor)
+    var src = $sponsor.attr('data-src')
+    $sponsor.attr('src', src)
+  })
 }
 
 

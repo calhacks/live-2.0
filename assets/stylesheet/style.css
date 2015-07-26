@@ -31,7 +31,7 @@ a {
   transition: 0.3s ease;
 }
 
-a:hover {
+a:hover:not(.social) {
   background-color: rgba(245, 166, 35, 1);
   color: white
 }
@@ -86,6 +86,11 @@ a:hover {
   cursor: pointer;
   transition: 0.3s ease;
   border-radius: 2px;
+}
+
+.pixel {
+  position: absolute;
+  z-index: 1
 }
 
 #typed-cursor.blinking {
@@ -322,10 +327,22 @@ a:hover {
 
 #landing {
   width: 100%;
-  height: 100%;
+  height: 600px;
   position: relative;
-  background-color: #001C2A;
-  padding: 0px 60px
+  padding: 200px 60px 0px 60px;
+  /*background-image: url("../img/hackathon_background.jpg");
+  background-size: cover;*/
+}
+
+#landing-filter-hashtag-instagram-hashtag-besties-for-life-hashtag-no-filter-hashtag-slide-into-my-dms {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(90deg, rgba(36, 198, 220, 0.360784) 10%, rgba(81, 74, 157, 0.239216) 90%);
+  background-color: rgba(0, 23, 36, 0.74);
 }
 
 .section:not(#landing) {
@@ -336,9 +353,6 @@ a:hover {
 
 #copy-container {
   width: 100%;
-  max-width: 1000px;
-  float: right;
-  margin-top: 32vh;
   position: relative;
   text-align: center;
   padding: 20px 10px;
@@ -388,7 +402,6 @@ a:hover {
 
 #about {
   background-color: white;
-
 }
 
 #hackathon_tablet {
@@ -406,7 +419,7 @@ a:hover {
 /* FAQ */
 
 #FAQ {
-  background-color: #6FCBDC;
+  background-color: #F8BF61;
   color: white
 }
 
@@ -526,16 +539,14 @@ a:hover {
   margin-bottom: 40px
 }
 
-/* social */
-
-#social.section {
-  background-color: #5F5E5D;
-  padding: 20px;
-  text-align: center;
-}
 
 .social {
   margin: 10px 20px;
+  border: none;
+}
+
+.social:hover {
+  background-color: none;
 }
 
 /* footer */
@@ -544,13 +555,17 @@ a:hover {
   background-color: #3E3E3E;
   color: white;
   text-align: center;
-  padding: 40px 20px;
+  padding: 20px 20px;
   font-family: "Open Sans",sans-serif;
 }
 
 #footer p {
   font-weight: 100;
   line-height: 1.7
+}
+
+#footer p.credit {
+  font-size: 12px;
 }
 
 /* responsive */
