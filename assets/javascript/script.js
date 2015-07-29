@@ -55,8 +55,8 @@ $(document).ready(function() {
   });
 });
 
-loadImg('.sponsor')
 loadImg('.partner')
+loadImg('.sponsor')
 
 var pixels = ["ambulance.svg", "battery-half.svg", "chevron-left.svg", "chevron-right.svg", "diamond.svg", "emoticon-confused.svg", "file-text.svg", "food.svg", "hand.svg", "location.svg", "palette.svg", "question.svg", "ruler-triangle.svg", "stats-down.svg", "tshirt.svg"];
 
