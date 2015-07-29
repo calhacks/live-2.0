@@ -530,6 +530,24 @@ a:hover:not(.social) {
   cursor: pointer;
 }
 
+#sponsors-container h1.partners-title {
+  margin-bottom: 10px
+}
+
+.partner {
+  height: 50px;
+  -webkit-filter: grayscale(100%);
+  margin: 25px 15px;
+  opacity: 0.6;
+  cursor: pointer;
+  margin-top: 20px
+}
+
+.partner:hover {
+  opacity: 1;
+  -webkit-filter: none;
+}
+
 .sponsor:hover {
   opacity: 1;
   -webkit-filter: none;
@@ -542,7 +560,11 @@ a:hover:not(.social) {
 
 .social {
   margin: 10px 20px;
-  border: none;
+  border: none
+}
+
+.instagram img {
+  height: 30px
 }
 
 .social:hover {

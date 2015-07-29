@@ -55,7 +55,8 @@ $(document).ready(function() {
   });
 });
 
-loadSponsors()
+loadImg('.sponsor')
+loadImg('.partner')
 
 var pixels = ["ambulance.svg", "battery-half.svg", "chevron-left.svg", "chevron-right.svg", "diamond.svg", "emoticon-confused.svg", "file-text.svg", "food.svg", "hand.svg", "location.svg", "palette.svg", "question.svg", "ruler-triangle.svg", "stats-down.svg", "tshirt.svg"];
 
@@ -108,8 +109,8 @@ function onScroll(event){
   });
 }
 
-function loadSponsors() {
-  $('.sponsor').each(function(index, sponsor) {
+function loadImg(selector) {
+  $(selector).each(function(index, sponsor) {
     var $sponsor = $(sponsor)
     var src = $sponsor.attr('data-src')
     $sponsor.attr('src', src)
