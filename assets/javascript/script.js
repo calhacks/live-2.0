@@ -111,7 +111,7 @@ function drakeOnMouse(e) {
 }
 
 function everythingDrake() {
-  $("img:not(.logo)").attr('src', "assets/img/drake.png")
+  $(".section:not(#footer) img").attr('src', "assets/img/drake.png")
 }
 
 
