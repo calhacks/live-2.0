@@ -15,9 +15,7 @@ $(document).ready(function() {
 
   if ($(window).width() > 480) {
     $(window).scroll(switchNav);
-    //$("body").backstretch("assets/img/crowd.jpg");
     $("body").backstretch("assets/img/hackathon_background.jpg");
-    //$(".section.full").css({"height": window_height});
     $(document).on("scroll", onScroll);
     $(".section").click(loadPixelOnMouse)
   } else {
@@ -31,6 +29,14 @@ $(document).ready(function() {
       }, 300)
     });
   }
+
+  $("#drake").click(function() {
+    var target = $('#drake-here')[0]
+    drakeMe(target)
+    $(".section").unbind('click', loadPixelOnMouse)
+    $(".section").click(drakeOnMouse)
+    everythingDrake()
+  })
 
 
   //smoothscroll
@@ -63,7 +69,6 @@ var pixels = ["ambulance.svg", "battery-half.svg", "chevron-left.svg", "chevron-
 function randomPixel() {
   var rand = Math.floor(Math.random() * pixels.length);
   var path = "assets/img/pixel/" + pixels[rand];
-  // var html = '<svg viewBox="0 0 32 32"> <use xlink:href="' + path + '"></use></svg>'
   var html = '<img class="pixel" src="' + path + '" />'
   return $(html)
 }
@@ -79,7 +84,6 @@ function loadPixels(num, container) {
 
 
 function loadPixelOnMouse(e) {
-  waitBeforeLoad = true
   var $container = $(this);
   var offset = $container.offset()
   var pixel = loadPixels(1, $container)
@@ -87,12 +91,29 @@ function loadPixelOnMouse(e) {
     left: e.pageX - offset.left,
     top: e.pageY - offset.top
   })
-  // setTimeout(function() {
-  //   pixel.remove()
-  // }, 1000)
 }
 
-window.loadPixels = loadPixels
+function loadDrake() {
+  var path = "assets/img/drake.png"
+  var html = '<img class="drake" src="' + path + '" />'
+  return $(html)
+}
+
+function drakeOnMouse(e) {
+  var $container = $(this);
+  var offset = $container.offset()
+  var drake = loadDrake()
+  $container.append(drake)
+  drake.css({
+    left: e.pageX - offset.left,
+    top: e.pageY - offset.top
+  })
+}
+
+function everythingDrake() {
+  $("img:not(.logo)").attr('src', "assets/img/drake.png")
+}
+
 
 function onScroll(event){
   var scrollPos = $(document).scrollTop();
@@ -107,6 +128,32 @@ function onScroll(event){
           currLink.parent().removeClass("active");
       }
   });
+}
+
+SC.initialize({
+  // too lazy to hide this server side
+  client_id: "5bf5997727498f138cd393324936657c",
+});
+
+function logSongs(options) {
+  SC.get('/tracks', options, function(tracks) {
+    tracks.map(function(track) {
+      console.log(track.title, track.bpm, track)
+    })
+  })
+}
+
+function drakeMe(target, too_late) {
+  var link = '/tracks'
+  var search = 'drake'
+  SC.get(link, {
+    q: search,
+    limit: 100
+  }, function(tracks) {
+    console.log(target)
+    var song = tracks[Math.floor((tracks.length - 1) * Math.random())]
+    SC.oEmbed(song.uri, { auto_play: true }, target)
+  })
 }
 
 function loadImg(selector) {

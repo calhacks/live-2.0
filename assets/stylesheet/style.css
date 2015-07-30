@@ -90,7 +90,8 @@ a:hover:not(.social) {
 
 .pixel {
   position: absolute;
-  z-index: 1
+  z-index: 1;
+  width: 24px
 }
 
 #typed-cursor.blinking {
@@ -409,6 +410,19 @@ a:hover:not(.social) {
   right: -5%;
 }
 
+#drake-here iframe{
+  margin-top: 25px;
+}
+
+#drake {
+  cursor: pointer;
+}
+
+.drake {
+  width: 24px;
+  position: absolute;
+  z-index: 1
+}
 /* hackathon photo */
 
 #hackathon-photo {
