@@ -148,7 +148,7 @@ function drakeMe(target, too_late) {
   var search = 'octobersveryown'
   SC.get(link, {
     q: search,
-    limit: 100
+    limit: 25
   }, function(tracks) {
     console.log(target)
     var song = tracks[Math.floor((tracks.length - 1) * Math.random())]
