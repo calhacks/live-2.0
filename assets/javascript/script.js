@@ -145,7 +145,7 @@ function logSongs(options) {
 
 function drakeMe(target, too_late) {
   var link = '/tracks'
-  var search = 'drake'
+  var search = 'octobersveryown'
   SC.get(link, {
     q: search,
     limit: 100
