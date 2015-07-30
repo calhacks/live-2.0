@@ -527,7 +527,6 @@ a:hover:not(.social) {
   -webkit-filter: grayscale(100%);
   margin: 25px 15px;
   opacity: 0.6;
-  cursor: pointer;
 }
 
 #sponsors-container h1.partners-title {
@@ -539,7 +538,6 @@ a:hover:not(.social) {
   -webkit-filter: grayscale(100%);
   margin: 25px 15px;
   opacity: 0.6;
-  cursor: pointer;
   margin-top: 20px
 }
 
