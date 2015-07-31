@@ -30,7 +30,7 @@ $(document).ready(function() {
     });
   }
 
-  $("#drake").click(function() {
+  $(".drake-me").click(function() {
     var target = $('#drake-here')[0]
     drakeMe(target)
     $(".section").unbind('click', loadPixelOnMouse)
