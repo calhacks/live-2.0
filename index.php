@@ -1,1 +1,1 @@
-<?php include_once("home.html"); ?>
+<?php require('default.html'); ?>
