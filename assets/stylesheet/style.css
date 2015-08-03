@@ -10,7 +10,7 @@ lightgrey: 8F9CB3;
 
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Proxima Nova','Montserrat', sans-serif;
     position: relative;
     color: #3E3E3E;
     overflow-x: hidden;
@@ -198,7 +198,7 @@ a:hover:not(.social) {
 }
 
 .section-body p {
-  font-family: "Open Sans",sans-serif;
+  font-family: "Proxima Nova","Open Sans",sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.8;
@@ -449,7 +449,7 @@ a:hover:not(.social) {
 }
 
 .faq-card {
-  font-family: "Open Sans",sans-serif;
+  font-family: "Proxima Nova","Open Sans",sans-serif;
   margin-bottom: 20px;
   background-color: white;
   border-radius: 4px;
@@ -590,7 +590,7 @@ a:hover:not(.social) {
   color: white;
   text-align: center;
   padding: 20px 20px;
-  font-family: "Open Sans",sans-serif;
+  font-family: "Proxima Nova","Open Sans",sans-serif;
 }
 
 #footer p {
@@ -877,11 +877,3 @@ a:hover:not(.social) {
 
 
 }
-
-
-
-
-
-
-
-
