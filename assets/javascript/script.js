@@ -195,6 +195,8 @@ var activateSection = function(section) {
   $(section).addClass("active")
 }
 
+var poem = "%cCal Hacks, a poem %c  \n\n%cThere once was a wee young lad,\nwhose brain had gone all sad,\nfor he didn't ignite his thoughts or his bytes,\nand now his friends laugh cause his life isn't rad.\nSo one dark, stormy night,\nhe found, to his delight,\na hackathon so, extravagant, bold,\nthat he giggled with glee as he hit apply.\nAnd now with his acceptance,\nhis friends are filled with reverence,\nthey pleaded and pleaded, for a chance to compete with,\nthis lad in Cal Hacks and go undefeated.\n\nThere once was a bored little lass,\nwho wanted to try out SASS,\nso she hit apply and overnight,\nshe found her life filled with delight.\nNow everywhere she go,\nShe radiates a glow,\ncause she's full of ideas of uses and features,\nfor all types of users and all types of creatures.\n\nAnd now for the final guest,\na hacker with wonder and zest,\nwho doesn't deplore a chance to explore,\ncome join us for 2 days of hacking galore!"
+
 var logEmoji = function() {
   var styles = {
     please: "color: #336699; font-weight: bold",
@@ -203,7 +205,7 @@ var logEmoji = function() {
     }
   };
   console.log(
-    "%cWelcome to Cal Hacks! %c  ",
-    styles.please, styles.emoji()
+    poem,
+    styles.please, styles.emoji(), styles.please
   );
 }
