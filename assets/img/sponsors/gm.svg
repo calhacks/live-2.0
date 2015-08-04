@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="261.17981"
+   height="261.14423"
+   id="svg4111"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   version="1.0"
+   sodipodi:docname="General Motors logo.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs4113">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective4119" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.9726426"
+     inkscape:cx="130.5899"
+     inkscape:cy="130.57211"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1024"
+     inkscape:window-height="721"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4" />
+  <metadata
+     id="metadata4116">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-157.98152,-167.50433)">
+    <path
+       style="fill:#22559e;overflow:visible"
+       d="M 169.09021,178.61151 L 408.05264,178.61151 L 408.05264,417.54141 L 169.09021,417.54141 L 169.09021,178.61151 z"
+       id="rect4057" />
+    <path
+       style="fill:#ffffff;overflow:visible"
+       d="M 228.86137,338.62448 L 348.41365,338.62448 L 348.41365,358.02263 L 228.86137,358.02263 L 228.86137,338.62448 z"
+       id="rect4059" />
+    <path
+       transform="matrix(0.6641609,0,0,0.6641609,159.01356,170.97301)"
+       style="fill:#ffffff;overflow:visible"
+       d="M 194.418,101.792 L 224.831,101.792 L 239.713,200.688 L 254.926,101.792 L 285.007,101.792 L 285.007,236.916 L 264.963,236.916 L 264.963,135.154 L 248.069,236.916 L 230.748,236.916 L 214.446,135.154 L 214.446,236.718 L 194.418,236.718 L 194.418,101.792"
+       id="polyline4061" />
+    <path
+       d="M 260.45418,267.07509 L 274.10535,267.07509 L 274.10535,260.73701 C 274.10535,254.5291 274.10535,236.71896 251.2695,236.71896 C 228.93776,236.71896 228.93776,257.05889 228.93776,260.73701 C 228.93776,262.69629 228.93776,303.81315 228.93776,307.38169 C 228.93776,320.99965 233.91896,329.92198 246.82494,330.00899 C 254.45615,330.02028 259.77607,325.24696 260.90316,323.42981 L 260.90316,328.19184 L 274.10535,328.32268 L 274.10535,279.69614 L 252.62705,279.69614 L 252.62705,290.49009 L 260.45418,290.49009 C 260.45418,290.49009 260.45418,303.06797 260.45418,304.69981 C 260.45418,311.9033 258.19936,316.8068 251.48867,316.8068 C 244.7667,316.8068 242.63209,311.58517 242.63209,304.69981 C 242.63209,300.43058 242.63209,263.39698 242.63209,260.73701 C 242.63209,257.16781 242.63209,249.02321 251.48867,249.02321 C 260.45418,249.02321 260.45418,257.29931 260.45418,260.73701 C 260.45418,263.72507 260.45418,267.07509 260.45418,267.07509"
+       id="path4063"
+       style="fill:#ffffff;overflow:visible" />
+  </g>
+</svg>

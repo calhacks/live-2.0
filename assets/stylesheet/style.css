@@ -537,10 +537,14 @@ a:hover:not(.social) {
   margin: 0 auto;
 }
 .sponsor {
-  height: 30px;
+  height: 35px;
   -webkit-filter: grayscale(100%);
   margin: 25px 15px;
   opacity: 0.6;
+}
+
+#uber {
+  height: 22px;
 }
 
 #sponsors-container h1.partners-title {
@@ -548,7 +552,7 @@ a:hover:not(.social) {
 }
 
 .partner {
-  height: 50px;
+  height: 40px;
   -webkit-filter: grayscale(100%);
   margin: 25px 15px;
   opacity: 0.6;
@@ -842,6 +846,10 @@ a:hover:not(.social) {
   .sponsor {
     height: 15px;
     margin: 10px;
+  }
+
+  #uber {
+    height: 10px
   }
 
   .partner {
