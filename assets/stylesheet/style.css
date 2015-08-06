@@ -31,7 +31,7 @@ a {
   transition: 0.3s ease;
 }
 
-a:hover:not(.social) {
+a:hover:not(.social):not(.button) {
   background-color: rgba(245, 166, 35, 1);
   color: white
 }
@@ -508,6 +508,7 @@ a:hover:not(.social) {
 
 .button.apply {
   padding: 12px 25px;
+  font-size: 24px
 }
 
 /* sponsor */
