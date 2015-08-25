@@ -544,7 +544,7 @@ a {
   opacity: 0.6;
 }
 
-#sponsor-uber {
+.sponsor-medium {
   height: 22px;
 }
 
@@ -849,7 +849,7 @@ a {
     margin: 10px;
   }
 
-  #sponsor-uber {
+  .sponsor-medium {
     height: 10px
   }
 
