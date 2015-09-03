@@ -539,7 +539,6 @@ a {
 }
 .sponsor {
   height: 35px;
-  -webkit-filter: grayscale(100%);
   margin: 25px 15px;
   opacity: 0.6;
 }
@@ -554,7 +553,6 @@ a {
 
 .partner {
   height: 40px;
-  -webkit-filter: grayscale(100%);
   margin: 25px 15px;
   opacity: 0.6;
   margin-top: 20px
