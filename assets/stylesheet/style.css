@@ -562,6 +562,12 @@ a {
   margin-top: 20px
 }
 
+.partner.title {
+  height: 100px;
+  display: block;
+  margin: 15px auto 20px auto
+}
+
 .partner:hover {
   opacity: 1;
   -webkit-filter: none;
@@ -863,6 +869,11 @@ a {
   .partner {
     height: 25px;
     margin: 10px
+  }
+
+  .partner.title {
+    height: 60px;
+    margin: 15px auto;
   }
 
   #sponsor .section-body p {
