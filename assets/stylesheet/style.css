@@ -520,9 +520,10 @@ a {
   margin-left: calc(50% - 75px);
 }
 
-#sponsor {
+#sponsor.section {
   background-color: #F0F0F0;
   color: #8F9CB3;
+  padding: 80px 60px;
 }
 
 #sponsor .section-body p {
@@ -536,6 +537,7 @@ a {
   text-align: center;
   width: 80%;
   margin: 0 auto;
+  margin-top: 40px;
 }
 .sponsor {
   height: 35px;
@@ -543,16 +545,18 @@ a {
   opacity: 0.6;
 }
 
+.sponsor.title {
+  height: 50px;
+  display: block;
+  margin: 25px auto 35px auto;
+}
+
 .sponsor-medium {
   height: 22px;
 }
 
-#sponsors-container h1.partners-title {
-  margin-bottom: 10px
-}
-
 .partner {
-  height: 40px;
+  height: 35px;
   margin: 25px 15px;
   opacity: 0.6;
   margin-top: 20px
@@ -845,6 +849,11 @@ a {
   .sponsor {
     height: 15px;
     margin: 10px;
+  }
+
+  .sponsor.title {
+    height: 25px;
+    margin: 10px auto 20px auto;
   }
 
   .sponsor-medium {
