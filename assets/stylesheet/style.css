@@ -551,8 +551,12 @@ a {
   margin: 25px auto 35px auto;
 }
 
-.sponsor-medium {
+.sponsor-too-big {
   height: 22px;
+}
+
+.sponsor-too-small {
+  height: 40px;
 }
 
 .partner {
@@ -862,8 +866,12 @@ a {
     margin: 10px auto 20px auto;
   }
 
-  .sponsor-medium {
+  .sponsor-too-big {
     height: 10px
+  }
+
+  .sponsor-too-small {
+    height: 20px;
   }
 
   .partner {
