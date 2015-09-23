@@ -490,7 +490,6 @@ a {
   position: relative;
   text-align: left;
   width: 100%;
-  z-index: 2;
 }
 
 .card-title {
