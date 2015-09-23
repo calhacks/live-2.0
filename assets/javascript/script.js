@@ -40,6 +40,7 @@ $(document).ready(function() {
     startRaining(rate_of_rain);
     $(".section").unbind("click", loadPixelOnMouse);
     $(".section").on("click", drakeOnMouse);
+    $(".apply-header").text("We <3 you!")
   });
 
   //smoothscroll
