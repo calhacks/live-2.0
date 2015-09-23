@@ -38,7 +38,7 @@ $(document).ready(function() {
 
   $(".rain-drake").click(function() {
     if (raining_drake) return;
-    
+
     startRaining(rate_of_rain);
     $(".section").unbind("click", loadPixelOnMouse);
     $(".section").on("click", drakeOnMouse);
@@ -176,12 +176,14 @@ function rainDrakes(num) {
   }
 }
 
-function rainDrake(starting) {
-  var drake = new Drake(starting, min_drake_size + Math.floor(Math.random() * drake_size_variance), min_acceleration + Math.random() * acceleration_variance);
+function rainDrake(starting, size) {
+  var size = size ? size : min_drake_size + Math.floor(Math.random() * drake_size_variance);
+  var drake = new Drake(starting, size, min_acceleration + Math.random() * acceleration_variance);
   drake.fall();
   setTimeout(function() {
     drake.die()
   }.bind(this), drake_death_time);
+  return drake;
 }
 
 window.rainDrake = rainDrake;
@@ -201,7 +203,14 @@ function Drake(starting, size, acceleration) {
 }
 
 Drake.prototype.create = function() {
-  this.img = $("<img class='spin' src='assets/img/drake.png'>");
+  this.img = $("<img class='spin' src='assets/img/drake.png'>")
+    .mouseenter(function() {
+      if (this.size > min_drake_size * 3) {
+        this.turnToSix();
+      } else {
+        this.die();
+      }
+    }.bind(this));
   $("body").append(this.img);
   this.img.css({
     zIndex: Math.floor(Math.random() * 4),
@@ -233,6 +242,25 @@ Drake.prototype.calcY = function() {
 
 Drake.prototype.calcX = function() {
   return this.x += 2;
+}
+
+Drake.prototype.decompose = function() {
+  var time = this.time + this.time_interval * 2 * 0.001;
+  var direction = (Math.random() > .5) ? -1 : 1;
+  var variance = Math.floor(Math.random() * 60) * direction;
+  var drake = rainDrake({x: this.x + variance, y: this.y}, this.size / 2);
+  drake.time = time;
+}
+
+Drake.prototype.shrink = function() {
+  this.size = this.size / 2;
+  this.img.css({
+    width: this.size
+  })
+}
+
+Drake.prototype.turnToSix = function() {
+  this.img.attr("src", "assets/img/six.png")
 }
 
 Drake.prototype.die = function() {
