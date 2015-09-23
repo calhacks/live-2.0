@@ -13,7 +13,10 @@ body {
     font-family: 'Proxima Nova','Montserrat', sans-serif;
     position: relative;
     color: #3E3E3E;
-    overflow-x: hidden;
+}
+
+#overflow-wrapper {
+  overflow: hidden;
 }
 
 html {
