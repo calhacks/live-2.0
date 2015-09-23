@@ -205,11 +205,7 @@ function Drake(starting, size, acceleration) {
 Drake.prototype.create = function() {
   this.img = $("<img class='spin' src='assets/img/drake.png'>")
     .mouseenter(function() {
-      if (this.size > min_drake_size * 3) {
-        this.turnToSix();
-      } else {
-        this.die();
-      }
+      this.turnToSix();
     }.bind(this));
   $("body").append(this.img);
   this.img.css({
