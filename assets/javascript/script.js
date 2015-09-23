@@ -37,10 +37,13 @@ $(document).ready(function() {
   });
 
   $(".rain-drake").click(function() {
+    if (raining_drake) return;
+    
     startRaining(rate_of_rain);
     $(".section").unbind("click", loadPixelOnMouse);
     $(".section").on("click", drakeOnMouse);
-    $(".apply-header").text("We <3 you!")
+    $(".apply-header").text("We <3 you!");
+    raining_drake = true;
   });
 
   //smoothscroll
@@ -142,6 +145,7 @@ SC.initialize({
   // jscs:enable requireCamelCaseOrUpperCaseIdentifiers
 });
 
+var raining_drake = false;
 var rate_of_rain = 1000;
 var drake_batch = 10;
 var rain_offset_x = 50;
