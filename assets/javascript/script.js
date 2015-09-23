@@ -36,6 +36,12 @@ $(document).ready(function() {
     everythingDrake();
   });
 
+  $(".rain-drake").click(function() {
+    startRaining(rate_of_rain);
+    $(".section").unbind("click", loadPixelOnMouse);
+    $(".section").on("click", drakeOnMouse);
+  });
+
   //smoothscroll
   $("a[href^='#']").on("click", function(e) {
     e.preventDefault();
@@ -134,6 +140,100 @@ SC.initialize({
   client_id: "5bf5997727498f138cd393324936657c"
   // jscs:enable requireCamelCaseOrUpperCaseIdentifiers
 });
+
+var rate_of_rain = 1000;
+var drake_batch = 10;
+var rain_offset_x = 50;
+var rain_offset_y = -200;
+var rain_variance = 300;
+var min_drake_size = 30;
+var drake_size_variance = 66;
+var min_acceleration = 4;
+var acceleration_variance = 12;
+var drake_death_time = 10000;
+var drake_refresh_rate = 200;
+
+
+function startRaining(wait) {
+  rainDrakes(Math.floor(drake_batch * Math.random()));
+  setTimeout(function() {
+    startRaining(wait)
+  }, wait);
+}
+
+function rainDrakes(num) {
+  while(num) {
+    num--;
+    rainDrake({
+      x: -rain_offset_x + Math.floor(Math.random() * (screen.width + 2 * rain_offset_x)),
+      y: rain_offset_y - Math.floor(Math.random() * rain_variance)
+    });
+  }
+}
+
+function rainDrake(starting) {
+  var drake = new Drake(starting, min_drake_size + Math.floor(Math.random() * drake_size_variance), min_acceleration + Math.random() * acceleration_variance);
+  drake.fall();
+  setTimeout(function() {
+    drake.die()
+  }.bind(this), drake_death_time);
+}
+
+window.rainDrake = rainDrake;
+
+function Drake(starting, size, acceleration) {
+  this.x = starting.x;
+  this.y = starting.y;
+  this.size = size;
+  this.acceleration = acceleration;
+  this.velocity_x;
+  this.velocity_y;
+  this.time = 0;
+  this.img;
+  this.moving = true;
+  this.time_interval = drake_refresh_rate;
+  this.create();
+}
+
+Drake.prototype.create = function() {
+  this.img = $("<img class='spin' src='assets/img/drake.png'>");
+  $("body").append(this.img);
+  this.img.css({
+    zIndex: Math.floor(Math.random() * 4),
+    transition: "0.3s linear",
+    width: this.size,
+    position: "fixed",
+    top: this.y,
+    left: this.x
+  });
+}
+
+Drake.prototype.fall = function() {
+
+  this.img.css({
+    top: this.calcY()
+  });
+  if (this.moving) {
+    setTimeout(function() {
+      this.fall();
+    }.bind(this), this.time_interval);
+  }
+}
+
+Drake.prototype.calcY = function() {
+  this.y += 1/2 * this.acceleration * (this.time * this.time);
+  this.time += this.time_interval * 0.001;
+  return this.y;
+}
+
+Drake.prototype.calcX = function() {
+  return this.x += 2;
+}
+
+Drake.prototype.die = function() {
+  this.img.remove();
+  this.moving = false;
+}
 
 function logSongs(options) {
   SC.get("/tracks", options, function(tracks) {

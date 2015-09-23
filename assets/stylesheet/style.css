@@ -165,6 +165,38 @@ a {
   background-color: rgba(0,0,0,0.36)
 }
 
+@-webkit-keyframes spinnerRotate {
+  from {-webkit-transform:rotate(-180deg);}
+  to {-webkit-transform:rotate(180deg);}
+}
+
+@-moz-keyframes spinnerRotate {
+  from {-moz-transform:rotate(-180deg);}
+  to {-moz-transform:rotate(180deg);}
+}
+
+@-ms-keyframes spinnerRotate {
+  from {-ms-transform:rotate(-180deg);}
+  to {-ms-transform:rotate(180deg);}
+}
+
+.spin {
+  -webkit-animation-name: spinnerRotate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spinnerRotate;
+  -moz-animation-duration: 5s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spinnerRotate;
+  -ms-animation-duration: 5s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+}
+
+
+
 /* sections */
 
 .section-wrapper {
@@ -457,7 +489,8 @@ a {
   padding: 40px 30px;
   position: relative;
   text-align: left;
-  width: 100%
+  width: 100%;
+  z-index: 2;
 }
 
 .card-title {
