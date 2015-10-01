@@ -1,5 +1,3 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^sponsors\/([^\.]+)$ sponsor_info.html [NC,L]
-RewriteRule ^sponsors_test\/([^\.]+)$ sponsors.html [NC,L]
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
