@@ -17,7 +17,7 @@ $(document).ready(function() {
 
   if ($(window).width() > 480) {
     $(window).scroll(switchNav);
-    $("body").backstretch("assets/img/hackathon_background.jpg");
+    $("body").backstretch("../assets/img/hackathon_background.jpg");
     $(document).on("scroll", onScroll);
     $(".section").click(loadPixelOnMouse);
   } else {
@@ -105,7 +105,7 @@ var pixels = ["ambulance.svg", "battery-half.svg", "chevron-left.svg",
 
 function randomPixel() {
   var rand = Math.floor(Math.random() * pixels.length);
-  var path = "assets/img/pixel/" + pixels[rand];
+  var path = "../assets/img/pixel/" + pixels[rand];
   var html = "<img class='pixel' src='" + path + "'>";
   return $(html);
 }
@@ -130,7 +130,7 @@ function loadPixelOnMouse(e) {
 }
 
 function loadDrake() {
-  var path = "assets/img/drake.png";
+  var path = "../assets/img/drake.png";
   var html = "<img class='drake' src='" + path + "'>";
   return $(html);
 }
@@ -147,7 +147,7 @@ function drakeOnMouse(e) {
 }
 
 function everythingDrake() {
-  $(".section:not(#footer) img").attr("src", "assets/img/drake.png");
+  $(".section:not(#footer) img").attr("src", "../assets/img/drake.png");
 }
 
 function onScroll(event) {
@@ -230,7 +230,7 @@ function Drake(starting, size, acceleration) {
 }
 
 Drake.prototype.create = function() {
-  this.img = $("<img class='spin' src='assets/img/drake.png'>")
+  this.img = $("<img class='spin' src='../assets/img/drake.png'>")
     .mouseenter(function() {
       this.turnToSix();
     }.bind(this));
@@ -283,7 +283,7 @@ Drake.prototype.shrink = function() {
 }
 
 Drake.prototype.turnToSix = function() {
-  this.img.attr("src", "assets/img/six.png")
+  this.img.attr("src", "../assets/img/six.png")
 }
 
 Drake.prototype.die = function() {
