@@ -93,7 +93,7 @@ function loadSponsorTitle() {
 function loadSponsorImage() {
   if (SPONSOR_NAME){
     var $img = $("<img>");
-    img.attr("src", "../img/sponsors" + SPONSOR_NAME + ".png")
+    $img.attr("src", "../img/sponsors" + SPONSOR_NAME + ".png")
     $("#sponsor-logo").append($img);
   }
 }
