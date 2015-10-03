@@ -342,13 +342,13 @@ a {
   transition: 0.3s ease;
 }
 
-.nav-section a, .button a, #social a {
+nav a, .button a, #social a {
   text-decoration: none;
   border: none;
   padding: 0;
 }
 
-.nav-section a:hover, .button a:hover, #social a:hover {
+nav a:hover, .button a:hover, #social a:hover {
   background-color: initial;
   color: inherit;
 }
