@@ -16,6 +16,7 @@ $(document).ready(function() {
     $("body").backstretch("assets/img/hackathon_background.jpg");
     $(document).on("scroll", onScroll);
     $(".section").click(loadPixelOnMouse);
+    $(".faq-card").click(function(e) {e.stopPropagation();});
   } else {
     $("#nav").addClass("active-mobile");
     $("#logo_white").hide();
@@ -66,6 +67,10 @@ $(document).ready(function() {
       $(document).on("scroll", onScroll);
     });
   });
+
+  $("#instructions").click(function() {
+    $("#instructions").hide();
+  })
 });
 
 loadImg(".partner");

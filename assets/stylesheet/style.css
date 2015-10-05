@@ -46,6 +46,23 @@ a {
   margin-top: -5px
 }
 
+.emoji {
+  height: 35px;
+  margin-bottom: -4px;
+  margin-left: 3px;
+}
+
+#instructions {
+  position: absolute;
+  opacity: 0.72;
+  width: 225px;
+  top: -40px;
+}
+
+#instructions:hover {
+  opacity: 1
+}
+
 #logo_orange {
   display: none
 }
@@ -508,6 +525,12 @@ a {
   font-weight: 400;
 }
 
+#general.section {
+  background-color: white;
+  padding-bottom: 60px;
+  padding-top: 120px;
+}
+
 /* apply */
 
 #apply {
@@ -672,6 +695,10 @@ a {
   #nav {
     padding: 40px 40px 0px 40px
   }
+
+  #instructions {
+    display: none;
+  }
 }
 
 /* phone */
@@ -698,6 +725,10 @@ a {
   .logo {
     width: 100px;
     margin-top: 5px;
+  }
+
+  #instructions {
+    display: none;
   }
 
   #nav {

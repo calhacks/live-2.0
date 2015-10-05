@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="274px" height="158px" viewBox="0 0 274 158" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>instructions</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="instructions" sketch:type="MSLayerGroup" transform="translate(2.000000, -5.000000)">
+            <text id="Our-designer-is-out." sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="24" font-weight="normal" fill="#4A4A4A">
+                <tspan x="29" y="22">Our designer is out. Pls </tspan>
+                <tspan x="29" y="51">decorate this section </tspan>
+                <tspan x="29" y="80">yourself. K thx.</tspan>
+            </text>
+            <path d="M16.0997725,72.7339563 C16.0997725,72.7339563 -4.9136451,95.3459738 2.50000036,118.881977 C9.91364582,142.41798 32.9944971,147.904541 32.9944971,147.904541" id="Line" stroke="#979797" stroke-width="4" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+            <path d="M31,136 L36.5,149.5" id="Line" stroke="#979797" stroke-width="4" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+            <path d="M35.5,150.404541 L23,155" id="Line" stroke="#979797" stroke-width="4" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+            <text id="Click" sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="24" font-weight="normal" fill="#4A4A4A">
+                <tspan x="55" y="162">Click</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
