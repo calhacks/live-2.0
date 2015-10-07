@@ -359,7 +359,7 @@ height: 100%;
 .schedule-content {
     position: relative;
     overflow: scroll;
-    height: 4400px
+    height: 6400px
 }
 #schedule-submit {
     background: #de6868;
