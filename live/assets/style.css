@@ -1,0 +1,480 @@
+html {
+    height: 100%;
+}
+body {	/*the outer layer of the site and global style attributes*/
+font-family: "Proxima Nova", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+margin: 0px;
+position: relative;
+padding: 120px 0px;
+background: #22313f;
+color: white;
+}
+
+a {
+color: inherit;
+text-decoration: none;
+}
+
+i {
+	display: none !important;
+}
+
+.clear {
+clear: both;
+}
+
+.img-scaled {
+width: 100%;
+}
+
+.img-scaled-wh {
+width: 100%;
+height: 100%;
+}
+
+.img-scaled-h {
+height: 100%;
+}
+
+#data-page {
+	display: none;
+}
+
+#background {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+#container {
+    width: 900px;
+    margin: 0px auto;
+}
+
+#header-title {
+    font-size: 36px;
+    font-weight: 700;
+    float: left;
+    text-transform: uppercase;
+    line-height: 56px;
+}
+#header-logo {
+    width: 24px;
+    float: left;
+    margin-top: 16px;
+    margin-right: 12px;
+}
+#header-live {
+    color: #de6868;
+    text-transform: initial;
+}
+#header-countdown {
+    float: right;
+}
+#header-countdown-caption {
+    float: left;
+    font-size: 12px;
+    text-align: right;
+    opacity: 0.5;
+    margin-top: 22px;
+}
+#header-countdown-content {
+    float: left;
+}
+.header-countdown-item {
+    float: left;
+    margin-left: 24px;
+    text-align: center;
+}
+.header-countdown-caption {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    opacity: 0.5;
+    line-height: 18px;
+}
+.header-countdown-time {
+    font-size: 32px;
+    line-height: 32px;
+    width: 36px;
+}
+.header-countdown-item:nth-child(1) {
+    margin-left: 18px;
+}
+
+.tile {
+    background: white;
+    color: #4a4a4a;
+    padding: 24px;
+    float: left;
+    margin-left: 12px;
+    border-radius: 2px;
+}
+.tile:nth-child(1) {
+    margin: 0px;
+}
+.tile-row {
+    margin-top: 12px;
+}
+#header {
+    margin-bottom: 12px;
+}
+.tile-header {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+#announcement .tile-header {
+    color: #de6868;
+    margin-bottom: 6px;
+}
+#announcement .tile-content {
+    font-size: 24px;
+    line-height: 36px;
+    opacity: 0.6;
+}
+#announcement {
+    float: none;
+    margin-left: 0px;
+}
+#sponsor {
+    width: 256px;
+    cursor: pointer;
+}
+.tile-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0px auto;
+    position: relative;
+    opacity: 0.6;
+    transition: linear 0.2s;
+}
+.tile-link {
+    width: 89px;
+    cursor: pointer;
+}
+.tile-caption {
+    font-size: 13px;
+    font-weight: 700;
+    opacity: 0.6;
+    text-align: center;
+    line-height: 24px;
+    transition: linear 0.2s;
+}
+#transportation img {
+    margin-top: 15px;
+}
+#challenge img, #faq img {
+    width: 36px;
+    margin: 0px auto;
+    display: block;
+}
+#sponsor .tile-icon {
+    width: 72px;
+    height: 72px;
+    float: left;
+    margin: 0px;
+}
+#sponsor .tile-caption {
+    float: left;
+    text-align: left;
+    margin-top: 12px;
+    margin-left: 12px;
+    font-size: 16px;
+}
+.tile:hover .tile-caption {
+    opacity: 1;
+}
+.tile:hover .tile-icon {
+    opacity: 1;
+}
+
+#schedule {
+    margin-top: 24px;
+    position: relative;
+    height: 4920px;
+}
+#schedule-calendar {
+    position: absolute;
+    top: 48px;
+    width: 100%;
+}
+.schedule-venue {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: 0.36;
+    margin-bottom: 12px;
+}
+.schedule-calendar-hour {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    height: 119px;
+    position: relative;
+}
+.schedule-calendar-hour .hour {
+    position: absolute;
+    font-size: 12px;
+    line-height: 18px;
+    opacity: 0.5;
+    top: -9px;
+    left: -72px;
+    width: 60px;
+    text-align: right;
+    font-weight: 700;
+}
+
+
+.schedule-calendar-hour::after {
+    content: '';
+    border-top: 1px dotted rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 59px;
+    width: 100%;
+}
+.schedule-column {
+    width: calc(33% - 6px);
+    height: 100%;
+    float: left;
+    margin-left: 12px;
+    position: relative;
+}
+.schedule-column:nth-child(1) {
+    margin-left: 0px;
+}
+.schedule-item {
+    background: white;
+    color: #4a4a4a;
+    border-radius: 2px;
+    padding: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 12px;
+    width: calc(100% - 24px);
+    position: absolute;
+}
+.schedule-item-1 {
+    height: 24px;
+}
+.schedule-item-2 {
+    height: 84px;
+}
+.schedule-item-3 {
+    height: 144px;
+}
+.schedule-item-4 {
+    height: 204px;
+}
+.schedule-item-5 {
+    height: 264px;
+}
+.schedule-item-caption {
+    opacity: 0.6;
+}
+.schedule-item-1 .schedule-item-caption {
+    display: inline-block;
+}
+.schedule-item-1 .schedule-item-title {
+    display: inline-block;
+    margin-right: 6px;
+}
+
+#schedule-indicator {
+    width: calc(100% + 24px);
+    height: 4px;
+    position: absolute;
+    background: #de6868;
+    top: 48px;
+    opacity: 0;
+}
+#schedule-indicator::after {
+    content: '';
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 12px solid #de6868;
+    position: absolute;
+    top: -4px;
+    right: 0px;
+    width: 0px;
+    height: 0px;
+}
+.schedule-content {
+    position: relative;
+}
+#schedule-submit {
+    background: #de6868;
+    color: white;
+    bottom: 18px;
+    position: absolute;
+    width: calc(100% - 24px);
+    padding: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 2px;
+    font-weight: 700;
+    text-align: center;
+}
+#schedule-guide-left {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 24px;
+    opacity: 0.6;
+    display: none;
+    z-index: 2;
+    cursor: pointer;
+}
+#schedule-guide-right {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 24px;
+    opacity: 0.6;
+    display: none;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#header-submit {
+    float: right;
+    background: #1abc9c;
+    border-radius: 2px;
+    padding: 12px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+#header-submit-icon {
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin-right: 12px;
+}
+#header-submit-caption {
+    float: left;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.24);
+    width: 100%;
+    text-align: center;
+    padding: 12px 0px;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.6);
+    left: 0px;
+}
+#footer a {
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+@media all and (max-width: 960px) {
+
+	#container {
+	    width: auto;
+	}
+	body {
+	    padding: 60px 30px;
+	}
+	#sponsor {
+	    width: calc(100% - 36px);
+	    margin-bottom: 9px;
+	}
+	.tile-header {
+	    font-size: 16px;
+	}
+	#announcement .tile-content {
+	    font-size: 16px;
+	    line-height: 24px;
+	}
+	.tile {
+	    padding: 18px;
+	}
+	.tile-row {
+	    margin-top: 9px;
+	}
+	.tile-link {
+	    width: calc(50% - 42px);
+	    margin-bottom: 9px;
+	    margin-left: 9px;
+	}
+	.tile-link:nth-child(2n) {
+	    margin-left: 0px;
+	}
+	.tile-icon {
+	}
+
+	#header-title {
+	    float: none;
+	}
+	#header-countdown {
+	    float: none;
+	    background: white;
+	    border-radius: 2px;
+	    color: #4a4a4a;
+	    padding: 18px;
+	}
+	#header-countdown-content {
+	    float: right;
+	}
+	#header-countdown-caption {
+	    font-size: 18px;
+	    margin-top: 12px;
+	}
+
+	.schedule-content {
+		position: relative;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+		width: 100%;
+		height: 4440px;
+	}
+	.schedule-column-container {
+		width: 100%;
+		height: 100%;
+	}
+	.schedule-column {
+	    width: 100%;
+	    height: 100%;
+	    float: left;
+	    margin: 0px;
+	}
+	.schedule-venue {
+	    text-align: center;
+	    font-size: 16px;
+
+	    position: relative;
+	    top: -6px;
+	}
+	.schedule-item {
+	    margin-left: 60px;
+	}
+	.schedule-calendar-hour {
+	    margin-left: 60px;
+	}
+	#schedule-submit {
+		width: calc(100% - 84px);
+		right: 0px;
+	}
+	#schedule-guide-right {
+		display: block;
+	}
+	#header-submit {
+	    float: none;
+	}
+
+}
