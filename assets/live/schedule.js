@@ -15,9 +15,10 @@ var schedule = [
 {
   title: "Opening Ceromony",
   caption: "",
-  time: {day: "fri", start: "10:00PM", duration: "1:00"},
-  location: "",
-  event_type: "Main timeline"
+  time: {day: "fri", start: "9:00PM", duration: "1:00"},
+  location: "uni",
+  event_type: "Main timeline",
+  offset: 1
 },
 
 {
