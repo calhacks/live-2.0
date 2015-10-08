@@ -13,7 +13,7 @@ var schedule = [
 },
 
 {
-  title: "Opening Ceromony",
+  title: "Opening Ceremony",
   caption: "",
   time: {day: "fri", start: "9:00PM", duration: "1:00"},
   location: "uni",
@@ -127,7 +127,7 @@ var schedule = [
 },
 
 {
-  title: "Busses Depart",
+  title: "Buses Depart",
   caption: "",
   time: {day: "sun", start: "5:00PM", duration: "1:00"},
   location: "",
@@ -153,7 +153,7 @@ var schedule = [
 },
 
 {
-  title: "Here Workshop",
+  title: "HERE Workshop",
   caption: "",
   time: {day: "sat", start: "10:45AM", duration: "0:30"},
   location: "uni",
@@ -217,7 +217,7 @@ var schedule = [
 },
 
 {
-  title: "Fireeye Workshop",
+  title: "FireEye Workshop",
   caption: "",
   time: {day: "sat", start: "7:15PM", duration: "0:30"},
   location: "uni",
@@ -276,7 +276,7 @@ var schedule = [
 },
 
 {
-  title: "Smash Tournement",
+  title: "Smash Tournament",
   caption: "",
   time: {day: "sat", start: "1:00PM", duration: "9:00"},
   location: "woz",
