@@ -5,7 +5,7 @@
 
 var schedule = [
 {
-  title: "Registration Opens + Busses Arive!",
+  title: "Registration Opens + Buses Arive!",
   caption: "Near Gate 5",
   time: {day: "fri", start: "7:00PM", duration: "3:00"},
   location: "",
