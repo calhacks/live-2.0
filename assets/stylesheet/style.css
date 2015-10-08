@@ -34,7 +34,7 @@ a {
   transition: 0.3s ease;
 }
 
-#about a:hover, #FAQ a:hover, #sponsor a:hover, #footer a:hover {
+#about a:hover, #general a:hover, #FAQ a:hover, #sponsor a:hover, #footer a:hover {
   background-color: rgba(245, 166, 35, 1);
   color: white
 }
