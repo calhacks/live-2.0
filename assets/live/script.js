@@ -35,7 +35,7 @@ function schedule_callback(state){
 
 days = ["FRI", "SAT", "SUN"];
 start_hour = 6;
-duration = 41;
+duration = 49;
 
 function createCalendar() {
 	var day = 0;
@@ -79,34 +79,46 @@ schedule_card_offset = 48;
 // string title, string caption, Date time
 // "Drake Performance", "Yay!", {day: "Sat", time: "12PM"}
 
-function createScheduleCard(title, caption, time) {
-	if (getCard(time)) {
-		updateCard(title, caption, time);
+function createScheduleCard(title, caption, time, event_type) {
+	if (getCard(time, event_type)) {
+		updateCard(title, caption, time, event_type);
 		return;
 	}
-	var $card = $("<div class='schedule-item' name='" + generateTimeHash(time) +  "'></div>");
+	var $card = $("<div class='schedule-item' name='" + generateCardHash(time, event_type) +  "'></div>");
 	var $title = $("<div class='schedule-item-title'></div>").text(title);
+	var $hour = $("<div class='schedule-item-time' />").text(getTimeRange(time));
 	var $caption = $("<div class='schedule-item-caption'></div>").text(caption);
 	var offset = cardOffset(time) + "px";
 	var card_height = parseTime(time.duration) * schedule_hour_height - schedule_card_margin;
-	$card.append($title).append($caption);
+	$card.append($title).append($hour).append($caption);
+	$("body").append($card)
+	if ($card.height() > card_height) $card.addClass("shortened")
 	$card.css({"top": offset, "height": card_height});
 	return $card;
 }
 
-function getCard(time) {
-	var $card = $(".schedule-item[name='" + generateTimeHash(time) + "']");
+function getTimeRange(time) {
+	var start = time.start.slice(0, -2);
+	var start_hour = parseTime(start);
+	var end_hour = start_hour + parseTime(time.duration);
+	end_hour = Math.floor(end_hour - 1) % 12 + 1 + ":" + (end_hour % 1) * 60;
+	end_hour = end_hour.split(":")[1].length > 1 ? end_hour : end_hour + "0";
+	return start + "-" + end_hour
+}
+
+function getCard(time, event_type) {
+	var $card = $(".schedule-item[name='" + generateCardHash(time, event_type) + "']");
 	return $card.length > 0 ? $card : false;
 }
 
-function updateCard(title, caption, time) {
-	var $card = getCard(time);
+function updateCard(title, caption, time, event_type) {
+	var $card = getCard(time, event_type);
 	$card.append($("<div class='schedule-item-title'></div>").text(title))
 	$card.append($("<div class='schedule-item-caption'></div>").text(caption));
 }
 
-function generateTimeHash(time) {
-	return time.day + time.start;
+function generateCardHash(time, event_type) {
+	return time.day + time.start + event_type;
 }
 
 function cardOffset(time) {
@@ -122,7 +134,6 @@ function cardOffset(time) {
 		day_offset = 48;
 	}
 	var hours = parseTime(time.slice(0, -2));
-	console.log(hours + period_offset + day_offset - schedule_start_hour)
 	return (hours % 12 + period_offset + day_offset - schedule_start_hour) * schedule_hour_height + schedule_card_offset;
 }
 
@@ -135,14 +146,20 @@ function parseTime(time) {
 
 function createSchedule(schedule) {
 	for (var card in schedule) {
-		console.log(schedule[card]);
 		appendCard(schedule[card]);
 	}
 }
 
 function appendCard(card) {
-	var $html_card = createScheduleCard(card.title, card.caption, card.time);
-	var $container = $("#" + card.location.toLowerCase());
+	var $html_card = createScheduleCard(card.title, card.caption, card.time, card.event_type);
+	if (card.offset) {
+		$html_card.addClass("offset-" + card.offset);
+	}
+
+	if (card.location) {
+		$html_card.addClass(card.location);
+	}
+	var $container = $("#" + card.event_type.split(" ").join("-").toLowerCase());
 	if ($container.length < 1) {
 		throw "WRONG LOCATION, DIPSHIT!";
 	}
@@ -227,5 +244,8 @@ $(document).ready(function(){
 	// create schedule
 	createCalendar();
 	createSchedule(schedule);
+	$("#schedule").css({
+		height: $("#schedule-calendar").height()
+	})
 
 });

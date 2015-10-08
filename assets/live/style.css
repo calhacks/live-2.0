@@ -212,6 +212,7 @@ height: 100%;
     text-transform: uppercase;
     opacity: 0.36;
     margin-bottom: 12px;
+    text-align: center;
 }
 .schedule-calendar-hour {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -259,7 +260,53 @@ height: 100%;
     margin-bottom: 12px;
     width: calc(100% - 24px);
     position: absolute;
+    border-left: 6px solid #4A4A4A;
+    transition: 0.3s ease;
 }
+
+.schedule-item.woz {
+    border-color: #FF6602
+}
+
+.schedule-item.sdh {
+    border-color: #6FCBDC
+}
+
+.schedule-item.uni {
+    border-color: #F6B758
+}
+
+.schedule-item.offset-1 {
+    margin-left: 6px;
+    width: calc(100% - 30px)
+}
+
+.schedule-item.offset-2 {
+    margin-left: 12px;
+    width: calc(100% - 36px)
+}
+
+.schedule-item.shortened .schedule-item-time, .schedule-item.shortened .schedule-item-caption {
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.schedule-item.shortened:hover .schedule-item-time, .schedule-item.shortened:hover .schedule-item-caption {
+    opacity: 1;
+}
+
+.schedule-item.shortened:hover {
+    height: initial !important;
+}
+
+.schedule-item:hover {
+    transform: scale(1.1,1.1);
+    z-index: 2;
+    -webkit-box-shadow: 4px 4px 5px -1px rgba(0,0,0,0.51);
+    -moz-box-shadow: 4px 4px 5px -1px rgba(0,0,0,0.51);
+    box-shadow: 4px 4px 5px -1px rgba(0,0,0,0.51);
+}
+
 .schedule-item-1 {
     height: 24px;
 }
@@ -311,7 +358,7 @@ height: 100%;
 #schedule-submit {
     background: #de6868;
     color: white;
-    bottom: 18px;
+    top: 4848px;
     position: absolute;
     width: calc(100% - 24px);
     padding: 12px;
