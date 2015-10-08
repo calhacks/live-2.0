@@ -240,7 +240,7 @@ height: 100%;
     width: 100%;
 }
 .schedule-column {
-    width: calc(14% - 6px);
+    width: calc(33% - 6px);
     height: 100%;
     float: left;
     margin-left: 12px;
@@ -248,10 +248,6 @@ height: 100%;
 }
 .schedule-column:nth-child(1) {
     margin-left: 0px;
-}
-
-.schedule-column-container {
-    width: 231%
 }
 .schedule-item {
     background: white;
@@ -358,8 +354,6 @@ height: 100%;
 }
 .schedule-content {
     position: relative;
-    overflow: scroll;
-    height: 6400px
 }
 #schedule-submit {
     background: #de6868;
