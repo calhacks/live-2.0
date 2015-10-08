@@ -5,16 +5,8 @@
 
 var schedule = [
 {
-  title: "Registration Opens!",
+  title: "Registration Opens + Busses Arive!",
   caption: "Near Gate 5",
-  time: {day: "fri", start: "7:00PM", duration: "3:00"},
-  location: "",
-  event_type: "Main timeline"
-},
-
-{
-  title: "Busses Arive",
-  caption: "",
   time: {day: "fri", start: "7:00PM", duration: "3:00"},
   location: "",
   event_type: "Main timeline"
