@@ -244,8 +244,8 @@ var schedule = [
 // Events
 
 {
-  title: "H@B Workshop",
-  caption: "",
+  title: "From Nothing to Something",
+  caption: "Topics include iOS, Flask, Front-end web, & Javascript",
   time: {day: "fri", start: "11:00PM", duration: "2:00"},
   location: "woz",
   event_type: "events"
