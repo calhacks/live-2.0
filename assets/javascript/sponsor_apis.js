@@ -142,8 +142,8 @@ var apis = [
   },
   {
     name: "Postmates",
-    link: "",
-    description: "",
+    link: "https://postmates.com/developer",
+    description: "Postmates' overall mission is to power local, on-demand logistics focused on fast deliveries from any type of merchant at scale. We provide an API that lets you move anything from point A to point B in less than an hour.",
     tier: "brown",
     img: "assets/img/sponsors/postmates.png"
   },

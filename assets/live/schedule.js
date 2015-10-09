@@ -155,7 +155,7 @@ var schedule = [
 
 {
   title: "HERE Workshop",
-  caption: "",
+  caption: "An overview of the differences between decisions that qualify a product as necessary to a given market and decisions that verify that the product works according to the original intentions.",
   time: {day: "sat", start: "10:45AM", duration: "0:30"},
   location: "uni",
   event_type: "Workshops"

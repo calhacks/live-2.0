@@ -319,6 +319,7 @@ height: 100%;
     position: absolute;
     border-left: 6px solid #F6B758;
     transition: 0.3s ease;
+    overflow: hidden;
 }
 
 .schedule-item.woz {
