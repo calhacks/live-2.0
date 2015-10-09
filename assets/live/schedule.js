@@ -305,7 +305,7 @@ var schedule = [
 {
   title: "Netflix and Build",
   caption: "",
-  time: {day: "sat", start: "8:00PM", duration: "1:00"},
+  time: {day: "sat", start: "7:30PM", duration: "3:00"},
   location: "uni",
   event_type: "events",
   offset: 2
@@ -317,7 +317,7 @@ var schedule = [
   time: {day: "sat", start: "9:00PM", duration: "1:00"},
   location: "uni",
   event_type: "events",
-  offset: 2
+  offset: 3
 },
 
 {

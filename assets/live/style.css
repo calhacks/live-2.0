@@ -286,13 +286,22 @@ height: 100%;
     width: calc(100% - 36px)
 }
 
+.schedule-item.offset-3 {
+    margin-left: 18px;
+    width: calc(100% - 42px)
+}
+
 .schedule-item.shortened .schedule-item-time, .schedule-item.shortened .schedule-item-caption {
     opacity: 0;
     transition: 0.3s ease;
 }
 
-.schedule-item.shortened:hover .schedule-item-time, .schedule-item.shortened:hover .schedule-item-caption {
+.schedule-item.shortened:hover .schedule-item-time {
     opacity: 1;
+}
+
+.schedule-item.shortened:hover .schedule-item-caption {
+    opacity: 0.6;
 }
 
 .schedule-item.shortened:hover {
@@ -370,9 +379,9 @@ height: 100%;
 }
 #schedule-guide-left {
     position: absolute;
-    top: 0px;
+    top: -5px;
     left: 0px;
-    width: 24px;
+    width: 20px;
     opacity: 0.6;
     display: none;
     z-index: 2;
@@ -380,10 +389,10 @@ height: 100%;
 }
 #schedule-guide-right {
     position: absolute;
-    top: 0px;
+    top: -5px;
     right: 0px;
-    width: 24px;
-    opacity: 0.6;
+    width: 20px;
+    opacity: 0.72;
     display: none;
     z-index: 2;
     cursor: pointer;
@@ -474,12 +483,19 @@ height: 100%;
 	    color: #4a4a4a;
 	    padding: 18px;
 	}
+    .countdown-break {
+        display: none
+    }
 	#header-countdown-content {
-	    float: right;
+	    float: left;
+        margin-left: calc(50% - 132px);
 	}
 	#header-countdown-caption {
 	    font-size: 18px;
 	    margin-top: 12px;
+        text-align: center;
+        margin-bottom: 10px;
+        float: none;
 	}
 
 	.schedule-content {
@@ -510,6 +526,28 @@ height: 100%;
 	.schedule-item {
 	    margin-left: 60px;
 	}
+
+    .schedule-item.offset-1 {
+        margin-left: 66px;
+        width: calc(100% - 30px)
+    }
+
+    .schedule-item.offset-2 {
+        margin-left: 72px;
+        width: calc(100% - 36px)
+    }
+
+    .schedule-item.offset-3 {
+        margin-left: 78px;
+        width: calc(100% - 42px)
+    }
+
+    .schedule-item:hover {
+        transform: none;
+        z-index: initial;
+        box-shadow: none;
+    }
+
 	.schedule-calendar-hour {
 	    margin-left: 60px;
 	}

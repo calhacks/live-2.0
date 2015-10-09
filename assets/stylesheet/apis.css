@@ -34,7 +34,7 @@ a {
   transition: 0.3s ease;
 }
 
-#about a:hover, #general a:hover, #FAQ a:hover, #sponsor a:hover, #footer a:hover {
+#about a:hover, #FAQ a:hover, #sponsor a:hover, #footer a:hover {
   background-color: rgba(245, 166, 35, 1);
   color: white
 }
@@ -44,23 +44,6 @@ a {
 .logo {
   width: 150px;
   margin-top: -5px
-}
-
-.emoji {
-  height: 35px;
-  margin-bottom: -4px;
-  margin-left: 3px;
-}
-
-#instructions {
-  position: absolute;
-  opacity: 0.72;
-  width: 225px;
-  top: -40px;
-}
-
-#instructions:hover {
-  opacity: 1
 }
 
 #logo_orange {
@@ -106,15 +89,6 @@ a {
   cursor: pointer;
   transition: 0.3s ease;
   border-radius: 2px;
-}
-
-.button.live {
-  background-color: #DE6868;
-  border-color: #DE6868;
-}
-
-.button.live:hover {
-  color: white
 }
 
 .pixel {
@@ -233,7 +207,6 @@ a {
   margin: 0 auto;
   position: relative;
   height: 100%;
-  max-height: 900px;
 }
 
 .section-header {
@@ -265,6 +238,10 @@ a {
   line-height: 1.8;
   text-align: left;
   color: #3E3E3E;
+}
+
+.section-body h1:not(:first-child) {
+  margin-top: 60px
 }
 
 .slant {
@@ -365,13 +342,13 @@ a {
   transition: 0.3s ease;
 }
 
-.nav-section a, .button a, #social a {
+nav a, .button a, #social a {
   text-decoration: none;
   border: none;
   padding: 0;
 }
 
-.nav-section a:hover, .button a:hover, #social a:hover {
+nav a:hover, .button a:hover, #social a:hover {
   background-color: initial;
   color: inherit;
 }
@@ -385,9 +362,9 @@ a {
 
 #landing {
   width: 100%;
-  height: 600px;
+  height: 300px;
   position: relative;
-  padding: 200px 60px 0px 60px;
+  padding: 170px 60px 0px 60px;
   /*background-image: url("../img/hackathon_background.jpg");
   background-size: cover;*/
 }
@@ -490,7 +467,7 @@ a {
 /* FAQ */
 
 #FAQ {
-  background-color: #F8BF61;
+  background-color: white;
   color: white
 }
 
@@ -515,6 +492,7 @@ a {
   position: relative;
   text-align: left;
   width: 100%;
+  border: 2px solid #F8BF61;;
 }
 
 .card-title {
@@ -528,12 +506,6 @@ a {
   font-size: 14px;
   line-height: 1.7;
   font-weight: 400;
-}
-
-#general.section {
-  background-color: white;
-  padding-bottom: 60px;
-  padding-top: 120px;
 }
 
 /* apply */
@@ -586,7 +558,7 @@ a {
 #sponsor.section {
   background-color: #F0F0F0;
   color: #8F9CB3;
-  padding: 80px 60px;
+  padding: 120px 60px;
 }
 
 #sponsor .section-body p {
@@ -649,6 +621,19 @@ a {
   margin-bottom: 40px
 }
 
+.sponsor-title {
+  font-size: 36px;
+}
+
+.sponsor-text {
+  font-size: 18px;
+  margin-top: 25px;
+  text-align: left;
+  line-height: 1.5
+}
+
+/* social */
+
 
 .social {
   margin: 10px 20px;
@@ -662,6 +647,7 @@ a {
 .social:hover {
   background-color: none;
 }
+
 
 /* footer */
 
@@ -700,10 +686,6 @@ a {
   #nav {
     padding: 40px 40px 0px 40px
   }
-
-  #instructions {
-    display: none;
-  }
 }
 
 /* phone */
@@ -730,10 +712,6 @@ a {
   .logo {
     width: 100px;
     margin-top: 5px;
-  }
-
-  #instructions {
-    display: none;
   }
 
   #nav {
