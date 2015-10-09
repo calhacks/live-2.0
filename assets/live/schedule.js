@@ -107,7 +107,8 @@ var schedule = [
   caption: "",
   time: {day: "sun", start: "12:00PM", duration: "1:00"},
   location: "",
-  event_type: "Main timeline"
+  event_type: "Main timeline",
+  offset: 1
 },
 
 {

@@ -79,18 +79,19 @@ schedule_card_offset = 48;
 // string title, string caption, Date time
 // "Drake Performance", "Yay!", {day: "Sat", time: "12PM"}
 
-function createScheduleCard(title, caption, time, event_type) {
+function createScheduleCard(title, caption, time, event_type, location) {
 	if (getCard(time, event_type)) {
 		updateCard(title, caption, time, event_type);
 		return;
 	}
 	var $card = $("<div class='schedule-item' name='" + generateCardHash(time, event_type) +  "'></div>");
 	var $title = $("<div class='schedule-item-title'></div>").text(title);
-	var $hour = $("<div class='schedule-item-time' />").text(getTimeRange(time));
+	var $hour = $("<div class='schedule-item-subtitle' />").text(getTimeRange(time) + getLocation(location));
 	var $caption = $("<div class='schedule-item-caption'></div>").text(caption);
 	var offset = cardOffset(time) + "px";
 	var card_height = parseTime(time.duration) * schedule_hour_height - schedule_card_margin;
-	$card.append($title).append($hour).append($caption);
+	$card.append($title).append($hour)
+	if (caption) $card.append($caption);
 	$("body").append($card)
 	if ($card.height() > card_height) $card.addClass("shortened")
 	$card.css({"top": offset, "height": card_height});
@@ -104,6 +105,22 @@ function getTimeRange(time) {
 	end_hour = Math.floor(end_hour - 1) % 12 + 1 + ":" + (end_hour % 1) * 60;
 	end_hour = end_hour.split(":")[1].length > 1 ? end_hour : end_hour + "0";
 	return start + "-" + end_hour
+}
+
+function getLocation(location) {
+	if (!location) {
+		return " @ Cal Memorial Stadium";
+	}
+
+	if (location == "woz") {
+		return " @ Wozniak Lounge, Soda Hall";
+	} else if (location == "sdh") {
+		return " @ Sutardja Dai Hall";
+	} else if (location == "uni") {
+		return " @ Cal Memorial Stadium";
+	}
+
+	return "";
 }
 
 function getCard(time, event_type) {
@@ -151,7 +168,7 @@ function createSchedule(schedule) {
 }
 
 function appendCard(card) {
-	var $html_card = createScheduleCard(card.title, card.caption, card.time, card.event_type);
+	var $html_card = createScheduleCard(card.title, card.caption, card.time, card.event_type, card.location);
 	if (card.offset) {
 		$html_card.addClass("offset-" + card.offset);
 	}
