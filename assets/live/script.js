@@ -86,7 +86,7 @@ function createScheduleCard(title, caption, time, event_type, location) {
 	}
 	var $card = $("<div class='schedule-item' name='" + generateCardHash(time, event_type) +  "'></div>");
 	var $title = $("<div class='schedule-item-title'></div>").text(title);
-	var $hour = $("<div class='schedule-item-subtitle' />").text(getTimeRange(time) + getLocation(location));
+	var $hour = $("<div class='schedule-item-subtitle' />").html(getTimeRange(time) + getLocation(location));
 	var $caption = $("<div class='schedule-item-caption'></div>").text(caption);
 	var offset = cardOffset(time) + "px";
 	var card_height = parseTime(time.duration) * schedule_hour_height - schedule_card_margin;
@@ -109,15 +109,15 @@ function getTimeRange(time) {
 
 function getLocation(location) {
 	if (!location) {
-		return " @ Cal Memorial Stadium";
+		return " @ <a href='assets/img/map.png' target='_blank'>Cal Memorial Stadium</a>";
 	}
 
 	if (location == "woz") {
-		return " @ Wozniak Lounge, Soda Hall";
+		return " @ <a href='assets/img/map.png' target='_blank'>Wozniak Lounge, Soda Hall</a>";
 	} else if (location == "sdh") {
-		return " @ Sutardja Dai Hall";
+		return " @ <a href='assets/img/map.png' target='_blank'>Sutardja Dai Hall</a>";
 	} else if (location == "uni") {
-		return " @ Cal Memorial Stadium";
+		return " @ <a href='assets/img/map.png' target='_blank'>Cal Memorial Stadium</a>";
 	}
 
 	return "";

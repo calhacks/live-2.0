@@ -352,6 +352,10 @@ height: 100%;
     opacity: 0.6;
 }
 
+.schedule-item-subtitle a {
+    text-decoration: underline;
+}
+
 .schedule-item.shortened .schedule-item-subtitle, .schedule-item.shortened .schedule-item-caption {
     opacity: 0;
     transition: 0.3s ease;
