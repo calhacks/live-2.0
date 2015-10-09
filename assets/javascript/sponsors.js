@@ -1,8 +1,5 @@
 $(document).ready(function() {
   logEmoji();
-  SPONSOR_NAME = getSponsorName();
-  loadSponsorTitle();
-  loadSponsorImage();
 
 
   //var window_height = $(window).height();

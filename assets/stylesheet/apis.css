@@ -278,7 +278,7 @@ a {
 /* nav */
 
 #nav {
-  position: fixed;
+  position: absolute;
   width: 100%;
   padding: 40px 80px 0px 80px;
   z-index: 2;
@@ -464,16 +464,22 @@ nav a:hover, .button a:hover, #social a:hover {
   color: white
 }
 
-/* FAQ */
+/* apis */
 
-#FAQ {
+#apis {
   background-color: white;
   color: white
 }
 
-#FAQ .section-body {
+#apis a {
+  display: inline-block;
+  margin-top: 8px;
+}
+
+#apis .section-body {
   max-width: 800px;
 }
+
 
 .faq-row {
   width: 50%;
@@ -495,11 +501,17 @@ nav a:hover, .button a:hover, #social a:hover {
   border: 2px solid #F8BF61;;
 }
 
+
 .card-title {
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 25px;
   font-weight: bold;
+}
+
+.card-subtitle {
+  color: #F5AB31;
+  margin-bottom: 10px;
 }
 
 .card-body {

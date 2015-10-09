@@ -1,9 +1,5 @@
 $(document).ready(function() {
   logEmoji();
-  SPONSOR_NAME = getSponsorName();
-  loadSponsorTitle();
-  loadSponsorImage();
-
 
   //var window_height = $(window).height();
   //adjust section height
@@ -16,7 +12,6 @@ $(document).ready(function() {
   });
 
   if ($(window).width() > 480) {
-    $(window).scroll(switchNav);
     $("body").backstretch("assets/img/hackathon_background.jpg");
     $(document).on("scroll", onScroll);
     $(".section").click(loadPixelOnMouse);
@@ -50,26 +45,10 @@ $(document).ready(function() {
     raining_drake = true;
   });
 
-  //smoothscroll
-  $("a[href^='#']").on("click", function(e) {
-    e.preventDefault();
-    $(document).off("scroll");
+  generateLists(apis);
 
-    $("a").each(function() {
-      $(this).parent().removeClass("active");
-    });
-    $(this).parent().addClass("active");
 
-    var target = this.hash;
-    var menu = target;
-    $target = $(target);
-    $("html, body").stop().animate({
-      "scrollTop": $target.offset().top + 2
-    }, 500, "swing", function() {
-      window.location.hash = target;
-      $(document).on("scroll", onScroll);
-    });
-  });
+
 });
 
 function getSponsorName() {
@@ -165,12 +144,6 @@ function onScroll(event) {
   });
 }
 
-SC.initialize({
-  // jscs:disable requireCamelCaseOrUpperCaseIdentifiers
-  // too lazy to hide this server side
-  client_id: "5bf5997727498f138cd393324936657c"
-  // jscs:enable requireCamelCaseOrUpperCaseIdentifiers
-});
 
 var raining_drake = false;
 var rate_of_rain = 1000;
@@ -390,3 +363,70 @@ var logEmoji = function() {
     styles.please, styles.emoji(), styles.please
   );
 };
+
+// APIs
+
+
+function makeCard(card) {
+
+  if (!card.description.trim() && !card.prize) {
+    return false;
+  }
+
+
+
+
+  var $card = $('<div class="faq-card" />');
+
+  var $title = $('<div class="card-title" />').text(card.name);
+  $card.append($title);
+
+  if (card.prize && card.prize.trim()) {
+    var $prize = $('<div class="card-subtitle" />').text(card.prize);
+    $card.append($prize);
+  }
+
+  if (card.description && card.description.trim()) {
+    var $body = $('<div class="card-body"></div>').text(card.description);
+    $card.append($body);
+  }
+
+  if (card.link && card.link.trim()) {
+    var $link = $("<a>").text("Learn More").attr("href", card.link);
+    $card.append($link);
+  }
+
+  if (card.custom && card.custom.trim()) {
+    var $custom = $(card.custom);
+    $card.append($custom);
+  }
+
+  return $card
+}
+
+function generateLists(cards) {
+  var $row_html = [$(".faq-row").first(), $($(".faq-row")[1])];
+  var row = 0;
+  for (var i in cards) {
+    var card = cards[i];
+    console.log(card.name)
+
+    if (card = makeCard(card)) {
+      $row_html[row].append(card);
+      row = 1 - row;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

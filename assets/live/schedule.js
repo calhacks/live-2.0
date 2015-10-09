@@ -129,7 +129,7 @@ var schedule = [
 {
   title: "Buses Depart",
   caption: "",
-  time: {day: "sun", start: "5:00PM", duration: "1:00"},
+  time: {day: "sun", start: "4:00PM", duration: "1:00"},
   location: "",
   event_type: "Main timeline"
 },

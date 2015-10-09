@@ -175,6 +175,63 @@ height: 100%;
     margin: 0px auto;
     display: block;
 }
+
+#hardware .tile-icon {
+    width: 35px;
+    top: 10px
+}
+
+#live-stream {
+    width: 304px;
+    height: 304px;
+    position: relative;
+    float: left;
+    background: white;
+    margin-right: 12px;
+}
+
+#live-stream iframe {
+    /* LMAOOOOOO */
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#sticker-challenge {
+    width: calc(100% - 364px);
+    margin-left: 0px;
+    height: 124px;
+    position: relative;
+}
+
+#drake-sticker {
+    position: absolute;
+    opacity: 0.84;
+    width: 60px;
+    right: 15px;
+    top: 15px;
+    transition: 0.3s ease;
+}
+
+#drake-sticker:hover {
+    opacity: 1;
+    transform: rotate(360deg);
+    width: 80px;
+}
+
+#sticker-challenge .tile-header {
+    color: #F6B758;
+}
+
+#sticker-challenge .tile-content {
+    color: #4A4A4A;
+    width: calc(100% - 47px);
+    line-height: 1.5
+}
+
+#sticker-challenge .tile-content p {
+    opacity: 0.72;
+}
+
 #sponsor .tile-icon {
     width: 72px;
     height: 72px;
@@ -467,7 +524,7 @@ height: 100%;
 	    margin-bottom: 9px;
 	    margin-left: 9px;
 	}
-	.tile-link:nth-child(2n) {
+	.tile-link:nth-child(2n + 1) {
 	    margin-left: 0px;
 	}
 	.tile-icon {
@@ -561,5 +618,13 @@ height: 100%;
 	#header-submit {
 	    float: none;
 	}
+    #live-stream {
+        display: none;
+    }
+    #sticker-challenge {
+        width: calc(100% - 39px);
+        margin: 0px;
+        height: initial;
+    }
 
 }
