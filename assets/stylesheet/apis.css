@@ -36,6 +36,15 @@ li {
   text-align: left;
 }
 
+.drake-sticker {
+  width: 45px;
+  transition: 0.3s ease;
+}
+
+.drake-sticker:hover {
+  transform: rotate(180deg);
+}
+
 a {
   text-decoration: none;
   border-bottom: 2px solid rgba(245, 166, 35, 0.72);
