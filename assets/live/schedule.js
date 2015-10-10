@@ -261,6 +261,14 @@ var schedule = [
 },
 
 {
+  title: "Silent Dance Party",
+  caption: "SHHHHHHHHHHHH",
+  time: {day: "sat", start: "7:00AM", duration: "1:00"},
+  location: "uni",
+  event_type: "events"
+},
+
+{
   title: "Morning Meditation",
   caption: "",
   time: {day: "sat", start: "8:00AM", duration: "1:00"},
