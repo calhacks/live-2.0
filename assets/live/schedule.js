@@ -32,7 +32,7 @@ var schedule = [
 {
   title: "Snacks",
   caption: "",
-  time: {day: "sat", start: "3:00AM", duration: "1:00"},
+  time: {day: "sat", start: "12:00AM", duration: "1:00"},
   location: "",
   event_type: "Main timeline"
 },

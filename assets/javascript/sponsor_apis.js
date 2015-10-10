@@ -47,7 +47,8 @@ var apis = [
     link: "https://developer.here.com/documentation",
     description: "Build immersive native applications while leveraging a powerful and flexible mapping platform. JavaScript API: Build Web applications with feature rich, interactive HERE Maps at their center. REST APIs: Flexible and fast access to variety of map data and functionalities. Perform batch geocode requests, advanced traffic incident reports, and creating an isoline route.",
     tier: "sponsor-too-small grizzly",
-    img: "assets/img/sponsors/here.png"
+    img: "assets/img/sponsors/here.png",
+    prize: "Samsung Gear and Garmin Vivoactive watches to the winning team members"
   },
   {
     name: "GM",
@@ -145,7 +146,8 @@ var apis = [
     link: "https://postmates.com/developer",
     description: "Postmates' overall mission is to power local, on-demand logistics focused on fast deliveries from any type of merchant at scale. We provide an API that lets you move anything from point A to point B in less than an hour.",
     tier: "brown",
-    img: "assets/img/sponsors/postmates.png"
+    img: "assets/img/sponsors/postmates.png",
+    prize: "$1000 Postmates delivery credit to the team that builds the best on-demand app."
   },
   {
     name: "Unity",
