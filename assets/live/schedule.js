@@ -335,7 +335,6 @@ var schedule = [
   time: {day: "sat", start: "11:00PM", duration: "1:00"},
   location: "uni",
   event_type: "events",
-  offset: 3
 },
 
 {
