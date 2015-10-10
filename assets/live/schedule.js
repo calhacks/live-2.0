@@ -210,8 +210,8 @@ var schedule = [
 },
 
 {
-  title: "a16z Workshop",
-  caption: "",
+  title: "a16z & TenXList meetup",
+  caption: "Fun and games!",
   time: {day: "sat", start: "6:30PM", duration: "0:30"},
   location: "uni",
   event_type: "Workshops"

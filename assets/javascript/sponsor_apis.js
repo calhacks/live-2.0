@@ -62,7 +62,8 @@ var apis = [
     link: "https://blockchain.info/api",
     description: "With our API, we provide end-to-end functionality for sending and receiving bitcoin with one of the largest wallet platforms in the bitcoin space. In addition to our wallet, we also run the biggest data & analytics engine available to build on!",
     tier: "grizzly sponsor-too-small",
-    img: "assets/img/sponsors/block.png"
+    img: "assets/img/sponsors/block.png",
+    prize: "Prize: 5 bitcoins (~$1,200)"
   },
   {
     name: "Moxtra",
