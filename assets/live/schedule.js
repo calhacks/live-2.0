@@ -279,7 +279,7 @@ var schedule = [
 {
   title: "Hacker Rank Code Sprints & Hacker Rank women's cup",
   caption: "In Banatao Auditorium. Read more about <a href='http://www.hackerrank.com/womenscup'>Women's Cup</a> and <a href='https://www.hackerrank.com/calhacks-codesprint'>CalHacks CodeSprint</a>.",
-  time: {day: "sat", start: "11:00AM", duration: "3:00"},
+  time: {day: "sat", start: "11:00AM", duration: "1:00"},
   location: "sdh",
   event_type: "events"
 },
@@ -324,6 +324,15 @@ var schedule = [
   title: "Big C Hike",
   caption: "",
   time: {day: "sat", start: "9:00PM", duration: "1:00"},
+  location: "uni",
+  event_type: "events",
+  offset: 3
+},
+
+{
+  title: "MLH Cup Stacking",
+  caption: "",
+  time: {day: "sat", start: "11:00PM", duration: "1:00"},
   location: "uni",
   event_type: "events",
   offset: 3

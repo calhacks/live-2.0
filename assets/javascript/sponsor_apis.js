@@ -91,7 +91,7 @@ var apis = [
     name: "Illumio",
     link: "",
     prize: "Prize for best Data Visualization Hack",
-    description: "",
+    description: "At Illumio we are visualizing data in a way that has never been done before. At Cal Hacks we want you to do the same. This is purposely open ended! Whether it's hardware or software, if you consider your hack to be 'visualizing data' in some way, you can win our prize!",
     tier: "grizzly",
     img: "assets/img/sponsors/illumio.png"
   },
@@ -180,7 +180,7 @@ var apis = [
   },
   {
     name: "Compose",
-    link: "www.compose.io/calhacks",
+    link: "http://www.compose.io/calhacks",
     description: "Need a fast database for your Cal Hacks app? Compose offers cloud database hosting including MongoDB, PostgreSQL, Redis, Elasticsearch and RethinkDB. Get one or more databases for 60-days free.",
     tier: "brown",
     img: "assets/img/sponsors/compose.svg"
