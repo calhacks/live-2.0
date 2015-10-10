@@ -3,7 +3,7 @@ var apis = [
 
   {
     name: "Microsoft",
-    link: "aka.ms/api.lib",
+    link: "https://aka.ms/api.lib",
     description: "Build on one or more of the following Microsoft technologies and qualify for the Microsoft Hack: Microsoft Azure, Windows 10, Kinect, OneNote, Bing, OneDrive, Office, more available.",
     tier: "title",
     img: "assets/img/sponsors/microsoft.svg",
