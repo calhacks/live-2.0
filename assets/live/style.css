@@ -23,6 +23,10 @@ i {
 clear: both;
 }
 
+a.sticker-link {
+  text-decoration: underline;
+}
+
 .img-scaled {
 width: 100%;
 }
