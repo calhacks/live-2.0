@@ -150,6 +150,13 @@ var apis = [
     img: "assets/img/sponsors/postmates.png",
     prize: "$1000 Postmates delivery credit to the team that builds the best on-demand app."
   },
+
+  {
+    name: "Postmates Special Promotion",
+    description: "<a href='assets/img/postmates_promo.png' target='_blank'>These restaurants</a> will have free delivery from 2-5PM courtesy of Postmates. Look for 'CalHacks Afternoon Snack' in the Postmates app.",
+    tier: "brown",
+    img: "assets/img/sponsors/postmates.png"
+  },
   {
     name: "Unity",
     link: "http://unity3d.com/get-unity/download?ref=professional",

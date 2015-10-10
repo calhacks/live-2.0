@@ -408,7 +408,7 @@ function makeCard(card) {
   }
 
   if (card.description && card.description.trim()) {
-    var $body = $('<div class="card-body"></div>').text(card.description);
+    var $body = $('<div class="card-body"></div>').html(card.description);
     $card.append($body);
   }
 
