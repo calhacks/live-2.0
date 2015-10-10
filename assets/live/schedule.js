@@ -40,7 +40,7 @@ var schedule = [
 {
   title: "Breakfast",
   caption: "",
-  time: {day: "sat", start: "8:00AM", duration: "1:00"},
+  time: {day: "sat", start: "9:00AM", duration: "1:00"},
   location: "",
   event_type: "Main timeline"
 },
@@ -89,7 +89,7 @@ var schedule = [
 {
   title: "Breakfast",
   caption: "",
-  time: {day: "sun", start: "8:00AM", duration: "1:00"},
+  time: {day: "sun", start: "9:00AM", duration: "1:00"},
   location: "",
   event_type: "Main timeline"
 },
