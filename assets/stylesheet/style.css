@@ -34,9 +34,13 @@ a {
   transition: 0.3s ease;
 }
 
-#about a:hover, #general a:hover, #FAQ a:hover, #sponsor a:hover, #footer a:hover {
+#about a:hover, #general a:hover, #FAQ a:hover, #sponsor p a:hover, #footer a:hover {
   background-color: rgba(245, 166, 35, 1);
   color: white
+}
+
+#sponsor #sponsors-container a {
+  border: none;
 }
 
 /* assets */
