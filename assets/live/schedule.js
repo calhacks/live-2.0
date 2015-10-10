@@ -246,8 +246,8 @@ var schedule = [
 {
   title: "From Nothing to Something",
   caption: "Topics include iOS, Flask, Front-end web, & Javascript",
-  time: {day: "fri", start: "11:00PM", duration: "2:00"},
-  location: "woz",
+  time: {day: "fri", start: "11:30PM", duration: "2:00"},
+  location: "sdh",
   event_type: "events"
 },
 
