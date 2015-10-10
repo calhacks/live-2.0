@@ -152,8 +152,8 @@ var apis = [
   },
   {
     name: "Unity",
-    link: "",
-    description: "",
+    link: "http://unity3d.com/get-unity/download?ref=professional",
+    description: "Free unity license. Use the code E3-ZVYC-6S7G-V6E3-WVCB-4A3M",
     tier: "brown",
     img: "assets/img/sponsors/unity.svg"
   },

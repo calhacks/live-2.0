@@ -87,7 +87,7 @@ function createScheduleCard(title, caption, time, event_type, location) {
 	var $card = $("<div class='schedule-item' name='" + generateCardHash(time, event_type) +  "'></div>");
 	var $title = $("<div class='schedule-item-title'></div>").text(title);
 	var $hour = $("<div class='schedule-item-subtitle' />").html(getTimeRange(time) + getLocation(location));
-	var $caption = $("<div class='schedule-item-caption'></div>").text(caption);
+	var $caption = $("<div class='schedule-item-caption'></div>").html(caption);
 	var offset = cardOffset(time) + "px";
 	var card_height = parseTime(time.duration) * schedule_hour_height - schedule_card_margin;
 	$card.append($title).append($hour)
