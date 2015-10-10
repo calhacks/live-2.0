@@ -277,8 +277,8 @@ var schedule = [
 },
 
 {
-  title: "Hacker Rank Code Sprints",
-  caption: "",
+  title: "Hacker Rank Code Sprints & Hacker Rank women's cup",
+  caption: "Banatao Auditorium",
   time: {day: "sat", start: "11:00AM", duration: "3:00"},
   location: "sdh",
   event_type: "events"

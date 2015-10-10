@@ -345,5 +345,30 @@ var apis = [
     img: "assets/img/sponsors/tigertext.png"
   },
 
+  {
+    name: "Pebble",
+    link: "",
+    description: "",
+    prize: "Best use of Pebble wins a Pebble Steel for each team member.",
+    tier: "cub",
+    img: ""
+  },
+  {
+    name: "Amazon Web Services",
+    link: "",
+    description: "",
+    tier: "cub",
+    prize: "Best use of AWS wins a 1TB Dell hard drive for each team member.",
+    img: ""
+  },
+  {
+    name: "Domain.com",
+    link: "",
+    description: "",
+    tier: "cub",
+    img: "",
+    prize: "The team with the best domain registered with Domain.com wins swag bags for each team member."
+  },
+
 
 ]
