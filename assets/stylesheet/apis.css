@@ -26,6 +26,16 @@ html {
   box-sizing: inherit;
 }
 
+ul {
+  margin-left: -20px;
+}
+
+li {
+  line-height: 1.8;
+  font-size: 18px;
+  text-align: left;
+}
+
 a {
   text-decoration: none;
   border-bottom: 2px solid rgba(245, 166, 35, 0.72);
