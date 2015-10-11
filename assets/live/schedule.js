@@ -112,14 +112,6 @@ var schedule = [
 },
 
 {
-  title: "Sponsor Judging",
-  caption: "",
-  time: {day: "sun", start: "2:00PM", duration: "1:00"},
-  location: "",
-  event_type: "Main timeline"
-},
-
-{
   title: "Closing Ceremony",
   caption: "",
   time: {day: "sun", start: "2:00PM", duration: "2:00"},
