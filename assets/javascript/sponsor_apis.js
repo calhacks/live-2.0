@@ -167,9 +167,10 @@ var apis = [
   {
     name: "pwc",
     link: "",
-    description: "",
+    description: "Awarded to team with the best mobile game app leveraging PwC's corporate responsibility focus of financial literacy for youth education.",
     tier: "sponsor-too-small brown",
-    img: "assets/img/sponsors/pwc.png"
+    img: "assets/img/sponsors/pwc.png",
+    prize: "All-expense trip for winning team to NYC + tour of our cyber forensic lab + meet and informational interviews with our "
   },
   {
     name: "Splunk",
