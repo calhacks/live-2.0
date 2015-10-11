@@ -190,7 +190,7 @@ $(document).ready(function(){
 	// 	update_schedule_indicator();
 	// }, 1000);
 
-	countdown = countdown(new Date(2015, 9, 9, 21, 0, 0), function(ts){
+	countdown = countdown(new Date(2015, 9, 10, 15, 42, 0), function(ts){
 		$('#header-countdown-day').text(ts.days);
 		$('#header-countdown-hour').text(ts.hours);
 		$('#header-countdown-min').text(ts.minutes);
