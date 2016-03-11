@@ -28,14 +28,15 @@ html {
 
 a {
   text-decoration: none;
-  border-bottom: 2px solid rgba(245, 166, 35, 0.72);
+  border-bottom: 2px solid rgba(17, 46, 81, 0.72);
   color: inherit;
   padding: 3px;
   transition: 0.3s ease;
 }
 
 #about a:hover, #general a:hover, #FAQ a:hover, #sponsor p a:hover, #footer a:hover {
-  background-color: rgba(245, 166, 35, 1);
+  /*background-color: rgba(245, 166, 35, 1);*/
+  background-color: #112e51;
   color: white
 }
 
@@ -113,8 +114,8 @@ a {
 }
 
 .button.live {
-  background-color: #DE6868;
-  border-color: #DE6868;
+  background-color: #e31c3d;
+  border-color: #e31c3d;
 }
 
 .button.live:hover {
@@ -323,13 +324,13 @@ a {
 }
 
 #nav.active .nav-section {
-  color: #F5A623;
+  color: #112e51;
   padding-bottom: 15px;
   opacity: 0.72
 }
 
 #nav.active .nav-section.active {
-  border-bottom: 3px solid #F5A623;
+  border-bottom: 3px solid #112E51;
   opacity: 1
 }
 
@@ -403,7 +404,8 @@ a {
   position: absolute;
   left: 0px;
   top: 0px;
-  background: linear-gradient(90deg, rgba(36, 198, 220, 0.360784) 10%, rgba(81, 74, 157, 0.239216) 90%);
+  /*background: linear-gradient(90deg, rgba(36, 198, 220, 0.360784) 10%, rgba(81, 74, 157, 0.239216) 90%);*/
+  background: linear-gradient(90deg, rgba(17, 46, 81, 0.360784) 10%, rgba(50, 58, 69, 0.239216) 90%);
   background-color: rgba(0, 23, 36, 0.74);
 }
 
@@ -439,7 +441,8 @@ a {
   text-align: center;
   line-height: 1.52;
   text-transform: uppercase;
-  color: rgb(216, 152, 37);
+  /*color: rgb(216, 152, 37);*/
+  color: #02bfe7;
 }
 
 .sub-headline.mini {
@@ -494,7 +497,7 @@ a {
 /* FAQ */
 
 #FAQ {
-  background-color: #F8BF61;
+  background-color: #112e51;
   color: white
 }
 
@@ -544,7 +547,7 @@ a {
 
 #apply {
   height: 600px;
-  background-color: #6FCBDC;
+  background-color: #112e51;
 }
 
 .desktop-img {
@@ -575,7 +578,13 @@ a {
 
 .button.apply {
   padding: 12px 25px;
-  font-size: 24px
+  font-size: 24px;
+}
+
+.button.apply:hover {
+  color: white;
+  border-color: #e31c3d;
+  background-color: #e31c3d;
 }
 
 /* sponsor */
@@ -588,8 +597,8 @@ a {
 }
 
 #sponsor.section {
-  background-color: #F0F0F0;
-  color: #8F9CB3;
+  background-color: #f1f1f1;
+  color: #3E3E3E;
   padding: 80px 60px;
 }
 
@@ -670,7 +679,7 @@ a {
 /* footer */
 
 #footer.section {
-  background-color: #3E3E3E;
+  background-color: #323a45;
   color: white;
   text-align: center;
   padding: 20px 20px;
@@ -986,4 +995,13 @@ a {
 
 
 
+}
+
+/* Add in-paragraph text formatting */
+.red {
+  color: #e31c3d;
+}
+
+.primary-alt {
+  color: #02bfe7;
 }
