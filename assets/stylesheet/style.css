@@ -47,7 +47,7 @@ a {
 /* assets */
 
 .logo {
-  width: 150px;
+  width: 250px;
   margin-top: -5px
 }
 
@@ -622,7 +622,7 @@ a {
 }
 
 .sponsor.title {
-  height: 50px;
+  height: 75px;
   display: block;
   margin: 25px auto 35px auto;
 }
@@ -741,7 +741,7 @@ a {
   }
 
   .logo {
-    width: 100px;
+    width: 200px;
     margin-top: 5px;
   }
 
@@ -830,7 +830,7 @@ a {
   }
 
   .nav-section:hover:not(#nav-close), .nav-section.active {
-    background-color: #F5A623;
+    background-color: #e31c3d;
     padding: 20px;
     border: none;
     color: white
