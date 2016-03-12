@@ -29,14 +29,6 @@ $(document).ready(function() {
     });
   }
 
-  // $(".drake-me").click(function() {
-  //   var target = $("#drake-here")[0];
-  //   drakeMe(target);
-  //   $(".section").unbind("click", loadPixelOnMouse);
-  //   $(".section").on("click", drakeOnMouse);
-  //   everythingDrake();
-  // });
-
   $(".rain-drake").click(function() {
     if (raining_drake) return;
 
