@@ -532,6 +532,10 @@ a {
   font-weight: bold;
 }
 
+.no-body {
+  margin-bottom: 0px;
+}
+
 .card-body {
   font-size: 14px;
   line-height: 1.7;
