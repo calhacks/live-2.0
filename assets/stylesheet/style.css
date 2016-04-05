@@ -122,6 +122,20 @@ a {
   color: white
 }
 
+.button.card {
+  border: 2px solid #112e51;
+  color: #112e51;
+  margin: 20px 0 0 25%;
+  width: 50%;
+  padding: 12px;
+  text-align: center;
+}
+
+.button.card:hover {
+  color: white;
+  background-color: #112e51;
+}
+
 .pixel {
   position: absolute;
   z-index: 1;
@@ -497,12 +511,12 @@ a {
 
 /* FAQ */
 
-#FAQ {
+#prompts {
   background-color: #112e51;
   color: white
 }
 
-#FAQ .section-body {
+#prompts .section-body {
   max-width: 800px;
 }
 
@@ -528,7 +542,7 @@ a {
 .card-title {
   font-size: 20px;
   line-height: 1.5;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-weight: bold;
 }
 
