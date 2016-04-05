@@ -1,5 +1,5 @@
 .bigfoot-footnote__button {
-  position: relative;
+  /*position: relative;*/
   z-index: 5;
   top: -0.1em;
   box-sizing: border-box;
@@ -249,7 +249,7 @@
 }
 
 .bigfoot-footnote__button {
-  position: relative;
+  /*position: relative;*/
   height: 0.95em;
   width: 1.5em;
   border-radius: 0.475em;
