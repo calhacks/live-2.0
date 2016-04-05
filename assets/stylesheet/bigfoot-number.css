@@ -249,7 +249,7 @@
 }
 
 .bigfoot-footnote__button {
-  /*position: relative;*/
+  position: relative;
   height: 0.95em;
   width: 1.5em;
   border-radius: 0.475em;
