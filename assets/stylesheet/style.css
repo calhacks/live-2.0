@@ -654,6 +654,10 @@ a {
   height: 40px;
 }
 
+.sponsor-way-too-small {
+  height: 50px;
+}
+
 .partner {
   height: 35px;
   margin: 25px 15px;
