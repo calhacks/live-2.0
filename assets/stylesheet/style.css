@@ -102,6 +102,7 @@ a {
 }
 
 .button {
+  background: transparent;
   border: 2px solid white;
   color: white;
   padding: 12px 25px;
@@ -945,10 +946,6 @@ a {
     margin-top: 30px;
   }
 
-  #apply .apply-container {
-    margin: 0;
-  }
-
   #apply .apply-header {
     font-size: 22px
   }
@@ -1022,4 +1019,47 @@ a {
 
 .primary-alt {
   color: #02bfe7;
+}
+
+/* EMAIL SIGNUP */
+
+input {
+  font-size: 16px;
+  outline: none;
+}
+
+/* Email field*/
+.email {
+  width: 50%;
+  /* Padding like buttons */
+  padding: 12px;
+  border: 2px solid white;
+  border-radius: 2px;
+  background: transparent;
+  color: white;
+}
+input[type=email]:focus {
+    border: 2px solid #02bfe7;
+}
+
+input.button.apply {
+  font-size: inherit;
+}
+
+/* Placeholder text */
+::-webkit-input-placeholder {
+  font-style: italic;
+  color: #dce4ef;
+}
+:-moz-placeholder {
+  font-style: italic;
+  color: #dce4ef;
+}
+::-moz-placeholder {
+  font-style: italic;
+  color: #dce4ef;
+}
+:-ms-input-placeholder { 
+  font-style: italic; 
+   color: #dce4ef;  
 }
