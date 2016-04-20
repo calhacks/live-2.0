@@ -659,6 +659,10 @@ a {
   height: 50px;
 }
 
+.handle-offset {
+  margin-bottom: 35px;
+}
+
 .partner {
   height: 35px;
   margin: 25px 15px;
@@ -762,6 +766,10 @@ a {
   .logo {
     width: 200px;
     margin-top: 5px;
+  }
+
+  .handle-offset {
+    margin-bottom: 10px;
   }
 
   #instructions {
