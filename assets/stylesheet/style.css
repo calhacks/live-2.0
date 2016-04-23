@@ -28,14 +28,15 @@ html {
 
 a {
   text-decoration: none;
-  border-bottom: 2px solid rgba(245, 166, 35, 0.72);
+  border-bottom: 2px solid rgba(17, 46, 81, 0.72);
   color: inherit;
   padding: 3px;
   transition: 0.3s ease;
 }
 
 #about a:hover, #general a:hover, #FAQ a:hover, #sponsor p a:hover, #footer a:hover {
-  background-color: rgba(245, 166, 35, 1);
+  /*background-color: rgba(245, 166, 35, 1);*/
+  background-color: #112e51;
   color: white
 }
 
@@ -46,7 +47,7 @@ a {
 /* assets */
 
 .logo {
-  width: 150px;
+  width: 250px;
   margin-top: -5px
 }
 
@@ -101,6 +102,7 @@ a {
 }
 
 .button {
+  background: transparent;
   border: 2px solid white;
   color: white;
   padding: 12px 25px;
@@ -113,12 +115,26 @@ a {
 }
 
 .button.live {
-  background-color: #DE6868;
-  border-color: #DE6868;
+  background-color: #e31c3d;
+  border-color: #e31c3d;
 }
 
 .button.live:hover {
   color: white
+}
+
+.button.card {
+  border: 2px solid #112e51;
+  color: #112e51;
+  margin: 20px 0 0 25%;
+  width: 50%;
+  padding: 12px;
+  text-align: center;
+}
+
+.button.card:hover {
+  color: white;
+  background-color: #112e51;
 }
 
 .pixel {
@@ -237,7 +253,8 @@ a {
   margin: 0 auto;
   position: relative;
   height: 100%;
-  max-height: 900px;
+  /* Breaks longer sections */
+  /*max-height: 900px;*/
 }
 
 .section-header {
@@ -323,13 +340,13 @@ a {
 }
 
 #nav.active .nav-section {
-  color: #F5A623;
+  color: #112e51;
   padding-bottom: 15px;
   opacity: 0.72
 }
 
 #nav.active .nav-section.active {
-  border-bottom: 3px solid #F5A623;
+  border-bottom: 3px solid #112E51;
   opacity: 1
 }
 
@@ -403,7 +420,8 @@ a {
   position: absolute;
   left: 0px;
   top: 0px;
-  background: linear-gradient(90deg, rgba(36, 198, 220, 0.360784) 10%, rgba(81, 74, 157, 0.239216) 90%);
+  /*background: linear-gradient(90deg, rgba(36, 198, 220, 0.360784) 10%, rgba(81, 74, 157, 0.239216) 90%);*/
+  background: linear-gradient(90deg, rgba(17, 46, 81, 0.360784) 10%, rgba(50, 58, 69, 0.239216) 90%);
   background-color: rgba(0, 23, 36, 0.74);
 }
 
@@ -439,7 +457,8 @@ a {
   text-align: center;
   line-height: 1.52;
   text-transform: uppercase;
-  color: rgb(216, 152, 37);
+  /*color: rgb(216, 152, 37);*/
+  color: #02bfe7;
 }
 
 .sub-headline.mini {
@@ -493,12 +512,12 @@ a {
 
 /* FAQ */
 
-#FAQ {
-  background-color: #F8BF61;
+#prompts {
+  background-color: #112e51;
   color: white
 }
 
-#FAQ .section-body {
+#prompts .section-body {
   max-width: 800px;
 }
 
@@ -524,8 +543,12 @@ a {
 .card-title {
   font-size: 20px;
   line-height: 1.5;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-weight: bold;
+}
+
+.no-body {
+  margin-bottom: 0px;
 }
 
 .card-body {
@@ -544,7 +567,7 @@ a {
 
 #apply {
   height: 600px;
-  background-color: #6FCBDC;
+  background-color: #112e51;
 }
 
 .desktop-img {
@@ -575,7 +598,13 @@ a {
 
 .button.apply {
   padding: 12px 25px;
-  font-size: 24px
+  font-size: 24px;
+}
+
+.button.apply:hover {
+  color: white;
+  border-color: #e31c3d;
+  background-color: #e31c3d;
 }
 
 /* sponsor */
@@ -588,8 +617,8 @@ a {
 }
 
 #sponsor.section {
-  background-color: #F0F0F0;
-  color: #8F9CB3;
+  background-color: #f1f1f1;
+  color: #3E3E3E;
   padding: 80px 60px;
 }
 
@@ -613,7 +642,7 @@ a {
 }
 
 .sponsor.title {
-  height: 50px;
+  height: 75px;
   display: block;
   margin: 25px auto 35px auto;
 }
@@ -624,6 +653,14 @@ a {
 
 .sponsor-too-small {
   height: 40px;
+}
+
+.sponsor-way-too-small {
+  height: 50px;
+}
+
+.handle-offset {
+  margin-bottom: 35px;
 }
 
 .partner {
@@ -649,11 +686,6 @@ a {
   -webkit-filter: none;
 }
 
-#sponsors-container h1 {
-  margin-bottom: 40px
-}
-
-
 .social {
   margin: 10px 20px;
   border: none;
@@ -670,7 +702,7 @@ a {
 /* footer */
 
 #footer.section {
-  background-color: #3E3E3E;
+  background-color: #323a45;
   color: white;
   text-align: center;
   padding: 20px 20px;
@@ -732,8 +764,12 @@ a {
   }
 
   .logo {
-    width: 100px;
+    width: 200px;
     margin-top: 5px;
+  }
+
+  .handle-offset {
+    margin-bottom: 10px;
   }
 
   #instructions {
@@ -821,7 +857,7 @@ a {
   }
 
   .nav-section:hover:not(#nav-close), .nav-section.active {
-    background-color: #F5A623;
+    background-color: #e31c3d;
     padding: 20px;
     border: none;
     color: white
@@ -918,10 +954,6 @@ a {
     margin-top: 30px;
   }
 
-  #apply .apply-container {
-    margin: 0;
-  }
-
   #apply .apply-header {
     font-size: 22px
   }
@@ -986,4 +1018,56 @@ a {
 
 
 
+}
+
+/* Add in-paragraph text formatting */
+.red {
+  color: #e31c3d;
+}
+
+.primary-alt {
+  color: #02bfe7;
+}
+
+/* EMAIL SIGNUP */
+
+input {
+  font-size: 16px;
+  outline: none;
+}
+
+/* Email field*/
+.email {
+  width: 50%;
+  /* Padding like buttons */
+  padding: 12px;
+  border: 2px solid white;
+  border-radius: 2px;
+  background: transparent;
+  color: white;
+}
+input[type=email]:focus {
+    border: 2px solid #02bfe7;
+}
+
+input.button.apply {
+  font-size: inherit;
+}
+
+/* Placeholder text */
+::-webkit-input-placeholder {
+  font-style: italic;
+  color: #dce4ef;
+}
+:-moz-placeholder {
+  font-style: italic;
+  color: #dce4ef;
+}
+::-moz-placeholder {
+  font-style: italic;
+  color: #dce4ef;
+}
+:-ms-input-placeholder { 
+  font-style: italic; 
+   color: #dce4ef;  
 }

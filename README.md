@@ -1,12 +1,14 @@
 # website2
-Cal Hacks 2 website. Written in vanilla HTML, CSS, and JavaScript.
+Cal Hacks 2 website, adapted for Bayes Hack 2016. Written in vanilla HTML, CSS, and JavaScript.
 
-# Credits
+# redits
 **Developers:**
-* Zhi Pan
-* Alex Kern
-* Kevin Ji
+* Cal Hacks: Zhi Pan
+* Cal Hacks: Alex Kern
+* Cal Hacks: Kevin Ji
+* Bayes Hack: Lukas Schwab
 
 **Designers:**
-* Zhi Pan
-* Alex Kern
+* Cal Hacks: Zhi Pan
+* Cal Hacks: Alex Kern
+* Bayes Hack: Kevin Wu
