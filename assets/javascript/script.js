@@ -49,6 +49,7 @@ $(document).ready(function() {
 
   //smoothscroll
   $("a[href^='#']").on("click", function(e) {
+    if (this.hash && this.hash.length == 1) return;
     e.preventDefault();
     $(document).off("scroll");
 
@@ -67,10 +68,6 @@ $(document).ready(function() {
       $(document).on("scroll", onScroll);
     });
   });
-
-  $("#instructions").click(function() {
-    $("#instructions").hide();
-  })
 });
 
 loadImg(".partner");
