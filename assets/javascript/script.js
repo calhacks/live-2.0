@@ -80,7 +80,7 @@ var pixels = ["ambulance.svg", "battery-half.svg", "chevron-left.svg",
 
 function randomPixel() {
   var rand = Math.floor(Math.random() * pixels.length);
-  var path = "assets/img/pixel/" + pixels[7];
+  var path = "assets/img/pixel/" + pixels[rand];
   var html = "<img class='pixel' src='" + path + "'>";
   return $(html);
 }
