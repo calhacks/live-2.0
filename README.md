@@ -1,5 +1,5 @@
-# website2
-Cal Hacks 2 website. Written in vanilla HTML, CSS, and JavaScript.
+# Cal Hacks 2.0 Live
+Live event site for Cal Hacks 2.0. Written in vanilla HTML, CSS, and JavaScript.
 
 # Credits
 **Developers:**
